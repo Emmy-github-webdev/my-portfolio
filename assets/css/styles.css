@@ -1,0 +1,8 @@
+.homepage {
+  display: grid;
+  position: relative;
+  width: 375px;
+  height: 5410px;
+  background: #f7f7f9;
+  border: red 1px solid;
+}

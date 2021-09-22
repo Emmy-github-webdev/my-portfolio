@@ -19,7 +19,7 @@ ul {
   background: #f7f7f9;
 }
 
-header {
+.header-page {
   position: absolute;
   width: 414px;
   height: 718px;
@@ -29,7 +29,7 @@ header {
   border-bottom-left-radius: 70px;
 }
 
-nav {
+header {
   position: absolute;
   width: 414px;
   height: 72px;
@@ -38,6 +38,7 @@ nav {
 
 .nav-container {
   position: absolute;
+  align-content: space-between;
   left: 0;
   right: 0;
   top: 10px;

@@ -14,12 +14,14 @@ ul {
 .homepage {
   display: grid;
   position: relative;
+  top: 65px;
   width: 414px;
   height: 5410px;
   background: #f7f7f9;
 }
 
 .header-page {
+  background-image: url('../images/mobile/header-shapes.png');
   position: absolute;
   width: 414px;
   height: 718px;
@@ -38,6 +40,7 @@ header {
 
 .nav-container {
   position: absolute;
+  display: flex;
   align-content: space-between;
   left: 0;
   right: 0;
@@ -104,6 +107,9 @@ header {
 }
 
 .header-container {
+  background-image: url('../images/mobile/header-shapes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   width: 412px;
   height: 587.15px;
@@ -244,7 +250,7 @@ header {
   width: 345px;
   height: 250px;
   left: calc(50% - 375px / 2);
-  top: 92px;
+  top: 40px;
 }
 
 .headline h1 {

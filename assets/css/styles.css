@@ -163,7 +163,7 @@ nav {
   height: 30.1px;
   left: 332.18px;
   top: 620px;
-  transform: rotate(69.41deg);  
+  transform: rotate(69.41deg);
 }
 
 .ellipse12 {
@@ -242,8 +242,8 @@ nav {
   position: absolute;
   width: 345px;
   height: 250px;
-  left: calc(50% - 375px/2);
-  top: 92px; 
+  left: calc(50% - 375px / 2);
+  top: 92px;
 }
 
 .headline h1 {
@@ -258,7 +258,7 @@ nav {
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   color: #172b4d;
   flex: none;
   order: 0;
@@ -322,12 +322,12 @@ nav {
   height: 24px;
   left: 0;
   top: 0;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  color: #7F8CFF;  
+  color: #7f8Cff;
   flex: none;
   order: 0;
   flex-grow: 0;

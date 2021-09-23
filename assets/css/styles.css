@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.homepage {
+  display: grid;
+  position: relative;
+  top: 65px;
+  width: 414px;
+  height: 5410px;
+  background: #f7f7f9;
+}
+
+.header-page {
+  position: absolute;
+  width: 414px;
+  height: 718px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  border-bottom-left-radius: 70px;
+}
+
+header {
+  position: absolute;
+  width: 414px;
+  height: 72px;
+  left: 0;
+}
+
+.nav-container {
+  position: absolute;
+  display: flex;
+  align-content: space-between;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+  top: calc(50% - 40px / 2);
+}
+
+.logo img {
+  position: static;
+  width: 76px;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 24px;
+  top: calc(50% - 40px / 2);
+  border-radius: 8px;
+}
+
+.menu-icon img {
+  position: static;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
+}
+
+.header-container {
+  background-image: url('../images/mobile/header-shapes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 412px;
+  height: 587.15px;
+  left: 0;
+  top: 10px;
+}
+
+.rectangle7 {
+  position: absolute;
+  width: 26.46px;
+  height: 4.73px;
+  left: 127.18px;
+  top: 121.59px;
+  background: #6070ff;
+  transform: matrix(0.76, 0.65, 0.65, -0.76, 0, 0);
+}
+
+.ellipse5 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 132.98px;
+  top: 155.81px;
+  background: #cbcdff;
+  border-radius: 50%;
+  transform: rotate(52.97deg);
+}
+
+.rectangle5 {
+  position: absolute;
+  width: 68.06px;
+  height: 12.18px;
+  left: 191.82px;
+  top: 670px;
+  background: #ebebff;
+  transform: rotate(23.34deg);
+}
+
+.ellipse4 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 237px;
+  top: 670px;
+}
+
+.ellipse3 {
+  position: absolute;
+  width: 90px;
+  height: 105px;
+  left: 326px;
+  top: 152.24px;
+}
+
+.ellipse13 {
+  position: absolute;
+  width: 30.1px;
+  height: 30.1px;
+  left: 332.18px;
+  top: 620px;
+  transform: rotate(69.41deg);
+}
+
+.ellipse12 {
+  position: absolute;
+  width: 24.14px;
+  height: 12.07px;
+  left: 341.76px;
+  top: 620px;
+  transform: rotate(-176.08deg);
+}
+
+.rectangle6 {
+  position: absolute;
+  width: 51.99px;
+  height: 9.3px;
+  left: -34px;
+  top: 100.49px;
+  background: #ebebff;
+  transform: rotate(-46.14deg);
+}
+
+.ellipse11 {
+  position: absolute;
+  width: 38.5px;
+  height: 19.25px;
+  left: -20px;
+  top: 131.47px;
+  transform: rotate(-156.88deg);
+}
+
+.ellipse8 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 214px;
+  top: 110px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.ellipse14 {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  left: 298px;
+  top: 315px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.ellipse15 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 53px;
+  top: 680px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.rectangle4 {
+  position: absolute;
+  width: 95.58px;
+  height: 22.02px;
+  left: 321px;
+  top: 138.79px;
+  background: #ebebff;
+  transform: rotate(-30deg);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  position: absolute;
+  width: 345px;
+  height: 250px;
+  left: calc(50% - 375px / 2);
+  top: 40px;
+}
+
+.headline h1 {
+  position: static;
+  width: 327px;
+  height: 150px;
+  left: 24px;
+  top: 114px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.headline p {
+  position: static;
+  width: 327px;
+  height: 146px;
+  left: 24px;
+  top: 276px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  position: static;
+  width: 117px;
+  height: 24px;
+  left: 24px;
+  top: 434px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.social-media-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  position: static;
+  width: 117px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0;
+}
+
+.social-media-text h2 {
+  position: static;
+  width: 117px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 8px;
+}
+
+.social-media-image ul {
+  position: static;
+  width: 170.17px;
+  height: 20px;
+  left: 24px;
+  top: 470px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.finger-icon {
+  position: absolute;
+  left: 48%;
+  right: 48.22%;
+  top: 110.81%;
+  bottom: 18.87%;
+}
+
+.m-icon {
+  position: absolute;
+  left: 27.47%;
+  right: 67.2%;
+  top: 110.15%;
+  bottom: 19.21%;
+}
+
+.linkedin-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 63px;
+  top: 110.15%;
+}
+
+.github-icon {
+  position: absolute;
+  left: 38.13%;
+  right: 57.07%;
+  top: 110.81%;
+  bottom: 18.87%;
+}
+
+.twitter-icon {
+  position: absolute;
+  left: 6.4%;
+  right: 88.27%;
+  top: 110.81%;
+  bottom: 18.88%;
+}

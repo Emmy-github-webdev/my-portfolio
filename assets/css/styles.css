@@ -180,7 +180,7 @@ header {
   width: 117px;
   height: 24px;
   left: 24px;
-  top: 434px;
+  top: 424px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -212,13 +212,14 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 24px;
   color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0 8px;
+  margin-bottom: 60px;
 }
 
 .social-media-image ul {
@@ -226,7 +227,7 @@ header {
   width: 170.17px;
   height: 20px;
   left: 24px;
-  top: 470px;
+  top: 490px;
   flex: none;
   order: 3;
   flex-grow: 0;
@@ -383,24 +384,6 @@ header {
   flex-grow: 0;
   margin: 12px 0;
 }
-
-.card-header2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  position: static;
-  width: 236px;
-  height: 32px;
-  left: 0;
-  top: 92px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 12px 0;
-}
-
-.card-header2
 
 .client {
   display: flex;
@@ -676,7 +659,29 @@ header {
   border-radius: 8px;
 }
 
-.see-more-detail button a {
+.resume a {
+  position: static;
+  width: 138px;
+  height: 24px;
+  left: 12px;
+  top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 10px;
+}
+
+.see-more-detail h5 {
   position: static;
   width: 100px;
   height: 24px;
@@ -734,19 +739,6 @@ header {
   order: 1;
   flex-grow: 0;
   margin: 88px 0;
-}
-
-.card img {
-  position: static;
-  width: 295px;
-  height: 220px;
-  left: 16px;
-  top: 16px;
-  border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 .card-text2 {
@@ -1055,7 +1047,7 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #7f8cff;
 }
@@ -1130,29 +1122,6 @@ header {
   flex-grow: 0;
   margin: 12px 0;
 }
-
-.resume a {
-  position: static;
-  width: 138px;
-  height: 24px;
-  left: 12px;
-  top: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 10px;
-}
-
 
 .resume:hover { 
   background: #6070ff;
@@ -1400,7 +1369,7 @@ header {
   position: static;
   width: 327px;
   height: 72px;
-  left: 0px;
+  left: 0;
   top: 392.15px;
   flex: none;
   order: 2;

@@ -703,7 +703,7 @@ header {
   margin: 0 10px;
 }
 
-.see-more-detail .button:hover { 
+.see-more-detail .button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -949,7 +949,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  left: 10xp;
+  left: 10px;
 }
 
 .about-content-top {
@@ -1123,7 +1123,7 @@ header {
   margin: 12px 0;
 }
 
-.resume:hover { 
+.resume:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -1252,7 +1252,7 @@ header {
   font-size: 15px;
   line-height: 20px;
   display: flex;
-  align-items: center;  
+  align-items: center;
   color: #253858;
   margin-left: 44px;
 }

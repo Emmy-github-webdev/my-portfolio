@@ -227,7 +227,7 @@ header {
   width: 170.17px;
   height: 20px;
   left: 24px;
-  top: 490px;
+  top: 400px;
   flex: none;
   order: 3;
   flex-grow: 0;
@@ -275,7 +275,7 @@ header {
 }
 
 .work {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   padding: 114px 24px;
@@ -601,7 +601,7 @@ header {
   align-items: center;
   padding: 4px 12px;
   position: static;
-  width: 69px;
+  width: 89px;
   height: 24px;
   left: 114px;
   top: 0;
@@ -648,7 +648,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 9px;
+  padding: 3px;
   position: absolute;
   width: 124px;
   height: 48px;
@@ -709,6 +709,10 @@ header {
   border-radius: 8px;
 }
 
+.see-more-detail .button a:hover {
+ color: #fff;
+}
+
 .see-more-detail .button:active {
   top: calc(50% - 48px / 2 + 57.5px);
   background: #2230d2;
@@ -728,7 +732,7 @@ header {
   padding: 16px;
   position: static;
   width: 327px;
-  height: 596px;
+  height: 630px;
   left: calc(50% - 327px / 2);
   top: 754px;
   background: #fff;
@@ -789,6 +793,23 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 12px 0;
+}
+
+.card-header2 p {
+  position: static;
+  width: 295px;
+  height: 76px;
+  left: 0px;
+  top: 136px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 1px 0;
 }
 
 .frame2 ul {
@@ -1108,7 +1129,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
+  padding: 3px;
   position: static;
   width: 162px;
   height: 48px;
@@ -1127,6 +1148,10 @@ header {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+}
+
+.resume a:hover {
+color: #fff;
 }
 
 .resume:active {
@@ -1187,7 +1212,7 @@ header {
   top: 657px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   display: flex;
@@ -1195,7 +1220,7 @@ header {
   color: #000;
 }
 
-.lang-frame img {
+.lang-frame .dropdown {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1206,6 +1231,19 @@ header {
   right: 26px;
   top: 657px;
   border-radius: 8px;
+  margin-right: 30px;
+}
+
+.dropdown img {
+  position: static;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
 }
 
 .lang-list {
@@ -1238,6 +1276,7 @@ header {
   margin: 12px 0;
   background-image: url('../images/mobile/js.svg');
   background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 .lang-js h3 {
@@ -1254,7 +1293,7 @@ header {
   display: flex;
   align-items: center;
   color: #253858;
-  margin-left: 44px;
+  margin-left: 54px;
 }
 
 .lang-htm {
@@ -1271,6 +1310,7 @@ header {
   margin: 12px 0;
   background-image: url('../images/mobile/htm.svg');
   background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 .lang-htm h3 {
@@ -1278,7 +1318,7 @@ header {
   height: 24px;
   left: 76px;
   right: 12px;
-  top: 820px;
+  top: 805px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1287,7 +1327,7 @@ header {
   display: flex;
   align-items: center;
   color: #253858;
-  margin-left: 44px;
+  margin-left: 54px;
 }
 
 .lang-cs {
@@ -1304,6 +1344,7 @@ header {
   margin: 12px 0;
   background-image: url('../images/mobile/cs.svg');
   background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 .lang-cs h3 {
@@ -1320,7 +1361,7 @@ header {
   display: flex;
   align-items: center;
   color: #253858;
-  margin-left: 44px;
+  margin-left: 54px;
 }
 
 .framework {
@@ -1343,13 +1384,24 @@ header {
   top: 1000px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
   color: #000;
   margin-left: 24px;
+}
+
+.framework .underline1 {
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  background: #dfe1e6;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .framework img {
@@ -1363,6 +1415,7 @@ header {
   right: 26px;
   top: 999px;
   border-radius: 8px;
+  margin-right: 30px;
 }
 
 .skill {
@@ -1385,7 +1438,7 @@ header {
   top: 1050px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   display: flex;
@@ -1404,4 +1457,16 @@ header {
   top: 1050px;
   right: 26px;
   border-radius: 8px;
+  margin-right: 30px;
+}
+
+.skill .underline2 {
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  background: #dee1e6;
+  margin-left: 24px;
+  margin-right: 24px;
 }

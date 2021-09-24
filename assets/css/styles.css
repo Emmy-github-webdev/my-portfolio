@@ -221,11 +221,12 @@ header {
   margin: 0 8px;
 }
 
-.social-media-image ul {
+.social-media-image {
   position: static;
   width: 170.17px;
   height: 20px;
   left: 24px;
+  padding: 20px 0;
   top: 0;
   flex: none;
   order: 3;

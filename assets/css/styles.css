@@ -180,11 +180,11 @@ header {
   width: 117px;
   height: 24px;
   left: 24px;
-  top: 424px;
+  top: 414px;
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 5px 0;
 }
 
 .social-media-text {
@@ -200,7 +200,7 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 9px 0;
+  margin: 0 0;
 }
 
 .social-media-text h2 {
@@ -219,7 +219,6 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 0 8px;
-  margin-bottom: 50px;
 }
 
 .social-media-image ul {
@@ -227,11 +226,11 @@ header {
   width: 170.17px;
   height: 20px;
   left: 24px;
-  top: 400px;
+  top: 0;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 7px 0;
+  margin: 0 0;
 }
 
 .finger-icon {

@@ -709,8 +709,12 @@ header {
   border-radius: 8px;
 }
 
+.resume a:hover {
+  color: #fff;
+}
+
 .see-more-detail .button a:hover {
- color: #fff;
+  color: #fff;
 }
 
 .see-more-detail .button:active {
@@ -799,7 +803,7 @@ header {
   position: static;
   width: 295px;
   height: 76px;
-  left: 0px;
+  left: 0;
   top: 136px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -1148,10 +1152,6 @@ header {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
-}
-
-.resume a:hover {
-color: #fff;
 }
 
 .resume:active {

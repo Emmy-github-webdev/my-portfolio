@@ -1470,3 +1470,24 @@ header {
   margin-left: 24px;
   margin-right: 24px;
 }
+
+.contact {
+  position: absolute;
+  width: 100%;
+  height: 779px;
+  left: 0px;
+  top: 5110px;
+  background: #fff;
+}
+
+.contact-form {
+  width: 100%;
+  height: 779px;
+  left: 0px;
+  top: 5510px;
+  background: #6070ff;
+  border-top-left-radius: 70px;
+  background-image: url('../images/mobile/contact-form-image.svg');
+  background-repeat: no-repeat;
+  background-position: right 0 top 20px;
+}

@@ -326,18 +326,22 @@ header {
 
 .work1 {
   background-image: url(/assets/images/mobile/portfolio1.png);
+  background-repeat: no-repeat;
 }
 
 .work2 {
   background-image: url(/assets/images/mobile/portfolio2.svg);
+  background-repeat: no-repeat;
 }
 
 .work3 {
   background-image: url(/assets/images/mobile/portfolio3.svg);
+  background-repeat: no-repeat;
 }
 
 .work4 {
   background-image: url(/assets/images/mobile/portfolio4.svg);
+  background-repeat: no-repeat;
 }
 
 .card-text {

@@ -308,7 +308,10 @@ header {
   justify-self: center;
 }
 
-.card img {
+.work1,
+.work2,
+.work3,
+.work4 {
   position: static;
   width: 295px;
   height: 220px;
@@ -319,6 +322,22 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 12px 0;
+}
+
+.work1 {
+  background-image: url(/assets/images/mobile/portfolio1.png);
+}
+
+.work2 {
+  background-image: url(/assets/images/mobile/portfolio2.svg);
+}
+
+.work3 {
+  background-image: url(/assets/images/mobile/portfolio3.svg);
+}
+
+.work4 {
+  background-image: url(/assets/images/mobile/portfolio4.svg);
 }
 
 .card-text {
@@ -765,7 +784,7 @@ header {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 2px 0;
 }
 
 .card-header2 {
@@ -781,7 +800,7 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 5px 0;
 }
 
 .card-header2 h3 {

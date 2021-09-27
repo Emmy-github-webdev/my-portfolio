@@ -64,6 +64,10 @@ header {
   top: calc(50% - 40px / 2);
 }
 
+.nav-item {
+  display: none;
+}
+
 .logo img {
   position: static;
   width: 76px;
@@ -306,7 +310,10 @@ header {
   margin: 88px 0;
 }
 
-.card img {
+.project1,
+.project2,
+.project3,
+.project4 {
   position: static;
   width: 295px;
   height: 220px;
@@ -317,6 +324,26 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 12px 0;
+}
+
+.project1 {
+  background-image: url('../images/mobile/portfolio1.png');
+  background-repeat: no-repeat;
+}
+
+.project2 {
+  background-image: url('../images/mobile/portfolio2.svg');
+  background-repeat: no-repeat;
+}
+
+.project3 {
+  background-image: url('../images/mobile/portfolio3.svg');
+  background-repeat: no-repeat;
+}
+
+.project4 {
+  background-image: url('../images/mobile/portfolio4.svg');
+  background-repeat: no-repeat;
 }
 
 .card-text {
@@ -736,7 +763,7 @@ header {
   padding: 16px;
   position: static;
   width: 327px;
-  height: 630px;
+  height: 648px;
   left: calc(50% - 327px / 2);
   top: 754px;
   background: #fff;
@@ -1608,4 +1635,19 @@ form button:active {
   bottom: -55px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+
+}
+
+/* large tablet and laptop styles */
+@media screen and (min-width: 960px){
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
 }

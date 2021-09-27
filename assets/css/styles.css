@@ -1599,3 +1599,13 @@ form button:active {
   background: #2230d2;
   border-radius: 8px;
 }
+
+.shape {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: -55px;
+  background: #0d151e;
+  border-radius: 10px;
+}

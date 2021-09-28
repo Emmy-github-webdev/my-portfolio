@@ -23,6 +23,7 @@ body {
   width: 414px;
   height: 5410px;
   background: #f7f7f9;
+  overflow-x: hidden;
 }
 
 .header-page {
@@ -304,6 +305,7 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 88px 0;
+  justify-self: center;
 }
 
 .card img {
@@ -747,6 +749,7 @@ header {
   order: 1;
   flex-grow: 0;
   margin: 88px 0;
+  justify-self: center;
 }
 
 .card-text2 {

@@ -1570,7 +1570,6 @@ form textarea {
 form button {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   padding: 20px 16px;
   margin-top: 24px;
@@ -1588,7 +1587,6 @@ form button {
   line-height: 24px;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
   border: 1px solid #cfd8dc;

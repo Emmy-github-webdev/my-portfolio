@@ -288,6 +288,7 @@ header {
   height: 2788px;
   left: 0;
   top: 718px;
+  justify-content: center;
 }
 
 .card {
@@ -1649,6 +1650,10 @@ form button:active {
 
 /* desktop styles */
 @media screen and (min-width: 1200px){
+  body {
+    width: 100%;
+  }
+
   header {
     position: absolute;
     width: 100%;
@@ -1702,25 +1707,43 @@ form button:active {
     top: 16px;
   }
 
-  .nav-item1 {
+  .nav-item1,
+  .nav-item2,
+  .nav-item3 {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px 12px;
     position: static;
-    width: 87px;
     height: 40px;
-    left: 0;
     top: 0;
     flex: none;
-    order: 0;
     flex-grow: 0;
     margin: 0 8px;
   }
 
-  .nav a {
+  .nav-item1 {
+    width: 87px;
+    left: 0;
+    order: 0;
+  }
+
+  .nav-item2 {
+    width: 70px;
+    left: 95px;
+    order: 1;
+  }
+
+  .nav-item3 {
+    width: 86px;
+    left: 173px;
+    order: 2;
+  }
+
+  .nav-item1 a,
+  .nav-item2 a,
+  .nav-item3 a {
     position: static;
-    width: 63px;
     height: 20px;
     left: 12px;
     top: 10px;
@@ -1738,4 +1761,25 @@ form button:active {
     flex-grow: 0;
     margin: 0 10px;
   }
+
+  .nav-item1 a {
+    width: 63px;
+  }
+
+  .nav-item1 a {
+    width: 46px;
+  }
+
+  .nav-item1 a {
+    width: 62px;
+  }
+
+  .homepage {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 5125px;
+    background: #f4f5f7;
+  }
+
 }

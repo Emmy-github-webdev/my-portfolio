@@ -1741,11 +1741,11 @@ form button:active {
     width: 63px;
   }
 
-  .nav-item1 a {
+  .nav-item2 a {
     width: 46px;
   }
 
-  .nav-item1 a {
+  .nav-item3 a {
     width: 62px;
   }
 
@@ -1897,11 +1897,11 @@ form button:active {
    background: #fff;
    grid-gap: 10px;
   }
-
+  
   .card {
     flex-direction: row-reverse;
   }
-
+  
   .project1 {
     display: grid;
     width: 544px;

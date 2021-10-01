@@ -1631,9 +1631,8 @@ form button:active {
 }
 
 @media screen and (min-width: 1200px) {
-  
   body {
-  width: 100%;
+    width: 100%;
   }
 
   header {
@@ -1775,7 +1774,7 @@ form button:active {
   }
 
   .header-container {
-    background-image: url('../images/desktop/Header-bg.svg');
+    background-image: url("../images/desktop/Header-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 5vw bottom 1vh;
@@ -1898,17 +1897,17 @@ form button:active {
 
   .card,
   .card2 {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   overflow-x: hidden;
-   background: #fff;
-   grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: hidden;
+    background: #fff;
+    grid-gap: 10px;
   }
-  
+
   .card {
     flex-direction: row-reverse;
   }
-  
+
   .project1 {
     display: grid;
     width: 544px;
@@ -1917,7 +1916,7 @@ form button:active {
     top: 24px;
     background: url(../images/desktop/work1.svg);
     border-radius: 8px;
-  } 
+  }
 
   .project3 {
     display: grid;
@@ -1948,7 +1947,7 @@ form button:active {
     background: url(../images/desktop/work4.svg);
     border-radius: 8px;
   }
- 
+
   .card-text,
   .card-text2 {
     display: grid;
@@ -2063,7 +2062,7 @@ form button:active {
     margin: 0 12px;
   }
 
-  .role h4{
+  .role h4 {
     position: static;
     width: 120px;
     height: 24px;
@@ -2221,7 +2220,7 @@ form button:active {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #6070ff;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -2284,10 +2283,10 @@ form button:active {
     flex-direction: row;
     align-items: center;
     padding: 12px;
-    width:auto;
+    width: auto;
     height: 48px;
     left: 120px;
-    border: 1px solid #6070FF;
+    border: 1px solid #6070ff;
     border-radius: 8px;
     margin-left: 50vw;
   }
@@ -2297,7 +2296,7 @@ form button:active {
     background: #fff;
     border-top-right-radius: 100px;
   }
-  
+
   .about-content {
     display: flex;
     flex-direction: row;
@@ -2326,7 +2325,7 @@ form button:active {
     line-height: 52px;
     display: flex;
     align-items: center;
-    color: #091E42;
+    color: #091e42;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -2401,7 +2400,7 @@ form button:active {
     margin: 0 8px;
   }
 
-.social-icon-about ul {
+  .social-icon-about ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2635,8 +2634,8 @@ form button:active {
   }
 
   .contact-form {
-   background-image: url(../images/desktop/desktop-contact-background.svg);
-   background-repeat: no-repeat;
+    background-image: url(../images/desktop/desktop-contact-background.svg);
+    background-repeat: no-repeat;
   }
 
   .contact-form h3 {

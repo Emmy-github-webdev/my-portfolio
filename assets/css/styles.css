@@ -1623,15 +1623,6 @@ form button:active {
   border-radius: 10px;
 }
 
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-}
-
-/* large tablet and laptop styles */
-@media screen and (min-width: 960px) {
-}
-
-/* desktop styles */
 @media screen and (min-width: 1200px) {
 
   body {
@@ -1894,69 +1885,82 @@ form button:active {
   }
 
   .work {
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
     width: 100%;
-    height: 2694px;
-    left: 0;
-    top: 917px;
+    display: grid;
   }
 
-.card {
-  position: absolute;
-  width: 75%;
-  height: 496px;
-  left: 142px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 24px;
-}
+  .card,
+  .card2 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   overflow-x: hidden;
+   background: #fff;
+   grid-gap: 10px;
+  }
 
-  .project1,
-  .project3 {
-    display: flex;
-    position: absolute;
-    width: 50%;
-    height: 448px;
-    left: 24px;
-    top: 24px;
-    border-radius: 8px;
+  .card {
+    flex-direction: row-reverse;
   }
 
   .project1 {
-    background-image: url('../images/desktop/work1.svg');
-    background-repeat: no-repeat;
-  }
+    display: grid;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    background: url(../images/desktop/work1.svg);
+    border-radius: 8px;
+  } 
 
   .project3 {
-    background-image: url('../images/mobile/portfolio1.png');
-    background-repeat: no-repeat;
+    display: grid;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    background: url(../images/desktop/work3.svg);
+    border-radius: 8px;
   }
 
-  .card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .project2 {
+    display: grid;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    background: url(../images/desktop/work2.svg);
+    border-radius: 8px;
+  }
+
+  .project4 {
+    display: grid;
+    width: 544px;
+    height: 448px;
+    left: 24px;
+    top: 24px;
+    background: url(../images/desktop/work4.svg);
+    border-radius: 8px;
+  }
+ 
+  .card-text,
+  .card-text2 {
+    display: grid;
     padding: 24px;
-    position: absolute;
     width: 544px;
     height: 445px;
     left: 590px;
     top: 24px;
+    background-color: #fff;
   }
 
-  .card-header {
+  .card-header,
+  .card-header2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
     position: static;
-    width: 50%;
+    width: 496px;
     height: 98px;
     left: 24px;
     top: calc(50% - 98px / 2 - 149.5px);
@@ -1966,9 +1970,10 @@ form button:active {
     margin: 24px 0;
   }
 
-  .card-header h3 {
+  .card-header h3,
+  .card-header2 h3 {
     position: static;
-    width: 50%;
+    width: 496px;
     height: 46px;
     left: 0;
     top: 0;
@@ -1984,13 +1989,14 @@ form button:active {
     margin: 12px 0;
   }
 
-  .frame {
+  .frame ul,
+  .frame2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
     position: static;
-    width: 50%;
+    width: 297px;
     height: 40px;
     left: 0;
     top: 58px;
@@ -1999,11 +2005,653 @@ form button:active {
     flex-grow: 0;
     margin: 12px 0;
   }
+
+  .client {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    position: static;
+    width: 75px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 12px;
+  }
+
+  .client h3 {
+    position: static;
+    width: 75px;
+    height: 24px;
+    left: 0;
+    top: 8px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .role {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    position: static;
+    width: 120px;
+    height: 40px;
+    left: 107px;
+    top: 0;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0 12px;
+  }
+
+  .role h4{
+    position: static;
+    width: 120px;
+    height: 24px;
+    left: 0;
+    top: 8px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    position: static;
+    width: 38px;
+    height: 40px;
+    left: 259px;
+    top: 0;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0 12px;
+  }
+
+  .year h4 {
+    position: static;
+    width: 38px;
+    height: 24px;
+    left: 0;
+    top: 8px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .frame p {
+    display: flex;
+    width: 496px;
+    height: 50px;
+    left: 24px;
+    top: 146px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0;
+  }
+
+  .tag,
+  .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: static;
+    width: auto;
+    height: 24px;
+    left: 24px;
+    top: 220px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0;
+  }
+
+  .tag1,
+  .tags1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    position: static;
+    width: auto;
+    height: 24px;
+    left: 0;
+    top: 0;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 8px;
+  }
+
+  .tag1 h3,
+  .tags1 h3 {
+    position: static;
+    width: 29px;
+    height: 16px;
+    left: 12px;
+    top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .tag2,
+  .tags2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    position: static;
+    width: auto;
+    height: 24px;
+    left: 61px;
+    top: 0;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 8px;
+  }
+
+  .tag2 h3,
+  .tags2 h3 {
+    position: static;
+    width: 21px;
+    height: 16px;
+    left: 12px;
+    top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070FF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .tag3,
+  .tags3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    position: static;
+    width: auto;
+    height: 24px;
+    left: 114px;
+    top: 0;
+    background: #ebebff;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0 8px;
+  }
+
+  .tag3 h3,
+  .tags3 h3 {
+    position: static;
+    width: 65px;
+    height: 16px;
+    left: 12px;
+    top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .see-more-detail {
+    display: grid;
+    width: 496px;
+    height: 153px;
+    left: 24px;
+    top: 278px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 24px 0;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width:auto;
+    height: 48px;
+    left: 120px;
+    border: 1px solid #6070FF;
+    border-radius: 8px;
+    margin-left: 50vw;
+  }
+
   .about {
-    display: none;
+    width: 100%;
+    background: #fff;
+    border-top-right-radius: 100px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    left: 4vw;
+    width: 80;
+  }
+
+  .about-content-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    width: 49%;
+  }
+
+  .about-content-top h3 {
+    display: flex;
+    width: 447px;
+    height: 114px;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091E42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .about-content-top p {
+    display: flex;
+    width: 447px;
+    height: 102px;
+    left: 0;
+    top: 126px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .social-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    position: static;
+    width: 200px;
+    height: 80px;
+    left: 0;
+    top: 240px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .social-text-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: static;
+    width: 117px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0;
+  }
+
+  .social-text-about h2 {
+    position: static;
+    width: 117px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 8px;
+  }
+
+.social-icon-about ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: static;
+    width: 200px;
+    height: 40px;
+    left: 0;
+    top: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0;
+  }
+
+  .github-icon-about {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    left: 1.5vw;
+    top: 450px;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 2px;
+  }
+
+  .linkedin-icon-about {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    left: 3.5vw;
+    top: 450px;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .finger-icon-about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 12vw;
+    height: 40px;
+    left: 6vw;
+    top: 450px;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .twitter-icon-about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    left: 5.7vw;
+    top: 450px;
+    border-radius: 8px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .about-m-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    left: 8.5vw;
+    top: 450px;
+    border-radius: 8px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .resume {
+    margin-top: 4.5vh;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 50%;
+    height: 500px;
+  }
+
+  .languages {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    position: static;
+    height: 216px;
+  }
+
+  .lang-frame .dropdown {
+  left: 68vw;
+  right: 20%;
+  top: 200px;
+  bottom: 20%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0;
+  }
+
+  .lang-frame h3 {
+   position: static;
+   height: 24px;
+   font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+
+  .lang-js h3 {
+    left: 60vw;
+    top: 330px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .lang-htm h3 {
+    left: 60vw;
+    top: 420px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .lang-cs h3 {
+    left: 60vw;
+    top: 510px;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .framework h3 {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    height: 216px;
+    top: 600px;
+    left: 50vw;
+  }
+
+  .framework img {
+    left: 68vw;
+    right: 20%;
+    top: 600px;
+    bottom: 20%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .framework .underline1 {
+    height: 1px;
+    left: 50vw;
+    right: 25vw;
+    top: 650px;
+    bottom: 80px;
+    background: #dfe1e6;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .skill h3 {
+    display: flex;
+    width: 684px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    height: 216px;
+    top: 700px;
+    left: 50vw;
+  }
+
+  .skill img {
+    left: 68vw;
+    right: 20%;
+    top: 700px;
+    bottom: 20%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
+  }
+
+  .skill .underline2 {
+    height: 1px;
+    left: 50vw;
+    right: 25vw;
+    top: 750px;
+    bottom: 80px;
+    background: #dfe1e6;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .contact {
-    display: none;
+    display: grid;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contact-form {
+   background-image: url(../images/desktop/desktop-contact-background.svg);
+   background-repeat: no-repeat;
+  }
+
+  .contact-form h3 {
+    justify-content: center;
+  }
+
+  .contact-form p {
+    width: 40%;
+    text-align: center;
+    margin-left: 25vw;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 100px;
+    justify-self: center;
+  }
+
+  form button {
+left: 33vw;
+top: 377px;
   }
 }

@@ -23,6 +23,7 @@ body {
   width: 100vw;
   height: 5410px;
   background: #f7f7f9;
+  overflow-x: hidden;
 }
 
 .header-page {
@@ -309,6 +310,7 @@ header {
   order: 0;
   flex-grow: 0;
   margin: 88px 0;
+  justify-self: center;
 }
 
 .project1,
@@ -763,6 +765,7 @@ header {
   order: 1;
   flex-grow: 0;
   margin: 88px 0;
+  justify-self: center;
 }
 
 .card-text2 {
@@ -1486,7 +1489,8 @@ header {
 
 .contact {
   position: absolute;
-  width: 100vw;
+  display: flex;
+  width: 100%;
   height: 779px;
   left: 0;
   top: 5110px;
@@ -1494,7 +1498,9 @@ header {
 }
 
 .contact-form {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 779px;
   left: 0;
   top: 5510px;
@@ -1574,13 +1580,15 @@ form textarea {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+  margin: 10px 0;
 }
 
 form button {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   padding: 20px 16px;
+  margin-top: 24px;
   position: absolute;
   width: 140px;
   height: 48px;
@@ -1593,12 +1601,11 @@ form button {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
   border: 1px solid #cfd8dc;
+  cursor: pointer;
 }
 
 form button:hover {

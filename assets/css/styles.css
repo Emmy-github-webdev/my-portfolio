@@ -2518,20 +2518,20 @@ form button:active {
   }
 
   .lang-frame .dropdown {
-  left: 68vw;
-  right: 20%;
-  top: 200px;
-  bottom: 20%;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
+    left: 68vw;
+    right: 20%;
+    top: 200px;
+    bottom: 20%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 0;
   }
 
   .lang-frame h3 {
-   position: static;
-   height: 24px;
-   font-family: "Poppins", sans-serif;
+    position: static;
+    height: 24px;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -2658,7 +2658,7 @@ form button:active {
   }
 
   form button {
-left: 33vw;
-top: 377px;
+    left: 33vw;
+    top: 377px;
   }
 }

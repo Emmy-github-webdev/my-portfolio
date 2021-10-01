@@ -2301,7 +2301,6 @@ form button:active {
     display: flex;
     flex-direction: row;
     left: 4vw;
-    width: 80;
   }
 
   .about-content-top {
@@ -2323,7 +2322,6 @@ form button:active {
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
-    display: flex;
     align-items: center;
     color: #091e42;
     flex: none;

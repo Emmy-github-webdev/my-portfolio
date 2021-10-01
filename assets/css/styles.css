@@ -1463,6 +1463,15 @@ header {
   margin-right: 30px;
 }
 
+.logo img:hover {
+  transform: rotate(180deg);
+}
+
+.card img:hover,
+.card2 img:hover {
+  transform: scale(1.3);
+}
+
 .skill .underline2 {
   position: absolute;
   height: 1px;
@@ -1555,6 +1564,14 @@ form input {
   border-radius: 8px;
   width: 100%;
   margin: 10px 0;
+}
+
+form input[type=text]:hover {
+  transform: translate(20px);
+}
+
+form input[type=email]:hover {
+  transform: translate(20px);
 }
 
 form textarea {

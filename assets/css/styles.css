@@ -1651,12 +1651,12 @@ form button:active {
     align-items: center;
     padding: 0;
     position: absolute;
-    height: 40px;
-    left: 730px;
+    height: 50px;
+    left: 680px;
     top: 16px;
   }
 
-  .nav-container .nav-item {
+  .menu-icon {
     display: none;
   }
 
@@ -1667,7 +1667,7 @@ form button:active {
     padding: 10px 12px;
     position: absolute;
     width: 100px;
-    height: 40px;
+    height: 50px;
     left: 143px;
     top: calc(50% - 40px / 2);
   }
@@ -1928,7 +1928,7 @@ form button:active {
     width: 424px;
     height: 445px;
     left: 590px;
-    top: 24px;
+    top: 14px;
     background-color: #fff;
   }
 
@@ -2230,10 +2230,10 @@ form button:active {
 
   .see-more-detail {
     display: grid;
-    width: 496px;
-    height: 153px;
+    width: 486px;
+    height: 133px;
     left: 24px;
-    top: 278px;
+    top: 260px;
     flex: none;
     order: 3;
     flex-grow: 0;
@@ -2328,7 +2328,7 @@ form button:active {
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin: 12px 0;
+    /* margin: 12px 0; */
   }
 
   .social-text-about {
@@ -2341,10 +2341,10 @@ form button:active {
     height: 24px;
     left: 0;
     top: 0;
-    flex: none;
+    /* flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 16px 0;
+    margin: 16px 0; */
   }
 
   .social-text-about h2 {
@@ -2356,7 +2356,7 @@ form button:active {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 24px;
     color: #7f8cff;
     flex: none;
@@ -2365,7 +2365,7 @@ form button:active {
     margin: 0 8px;
   }
 
-  .social-icon-about ul {
+  .social-icon-about {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2374,31 +2374,30 @@ form button:active {
     width: 200px;
     height: 40px;
     left: 0;
-    top: 40px;
+    top: 30px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 16px 0;
   }
 
   .github-icon-about {
     display: flex;
     flex-direction: row;
     padding: 8px;
-    width: 40px;
+    width: 30px;
     height: 40px;
     left: 10vw;
-    top: 450px;
+    top: 425px;
   }
 
   .linkedin-icon-about {
     display: flex;
     flex-direction: row;
     padding: 8px;
-    width: 40px;
+    width: 30px;
     height: 40px;
-    left: 14vw;
-    top: 450px;
+    left: 12vw;
+    top: 425px;
   }
 
   .finger-icon-about {
@@ -2406,10 +2405,10 @@ form button:active {
     flex-direction: row;
     align-items: flex-start;
     padding: 8px;
-    width: 12vw;
+    width: 30px;
     height: 40px;
-    left: 15vw;
-    top: 450px;
+    left: 14vw;
+    top: 425px;
   }
 
   .twitter-icon-about {
@@ -2417,10 +2416,10 @@ form button:active {
     flex-direction: row;
     align-items: flex-start;
     padding: 8px;
-    width: 40px;
+    width: 30px;
     height: 40px;
-    left: 23vw;
-    top: 450px;
+    left: 16vw;
+    top: 425px;
   }
 
   .about-m-icon {
@@ -2428,10 +2427,10 @@ form button:active {
     flex-direction: row;
     align-items: flex-start;
     padding: 8px;
-    width: 40px;
+    width: 30px;
     height: 40px;
-    left: 27vw;
-    top: 450px;
+    left: 18vw;
+    top: 425px;
   }
 
   .resume {
@@ -2444,6 +2443,7 @@ form button:active {
     align-items: center;
     padding: 0;
     width: 50%;
+    gap: 8vw;
   }
 
   .languages {
@@ -2453,10 +2453,15 @@ form button:active {
     height: 216px;
   }
 
+  .lang-frame h3 {
+    top: 150px;
+    bottom: 20%;
+  }
+
   .lang-frame .dropdown {
     left: 85vw;
     right: 20%;
-    top: 150px;
+    top: 100px;
     bottom: 20%;
     flex: none;
     order: 0;
@@ -2468,7 +2473,7 @@ form button:active {
     display: flex;
     flex-direction: row;
     left: 10vw;
-    gap: 4px;
+    gap: 3vw;
   }
 
   .lang-frame h3 {
@@ -2485,8 +2490,9 @@ form button:active {
   }
 
   .lang-js {
-    width: 102px;
-    height: 100px;
+    width: 90px;
+    height: 88px;
+    margin-top: -20vh;
     left: 50vw;
     background: #f7f7f9;
     border-radius: 8px;
@@ -2496,14 +2502,13 @@ form button:active {
 
   .lang-js h3 {
     left: 47vw;
-    top: 360px;
-    text-align: center;
-    align-items: flex-start;
+    top: 31.5%;
   }
 
   .lang-htm {
-    width: 102px;
-    height: 100px;
+    width: 90px;
+    height: 88px;
+    margin-top: -20vh;
     top: 12px;
     background: #f7f7f9;
     border-radius: 8px;
@@ -2513,14 +2518,14 @@ form button:active {
 
   .lang-htm h3 {
     left: 60vw;
-    top: 360px;
-    text-align: center;
-    align-items: flex-start;
+    top: 31.5%;
+  
   }
 
   .lang-cs {
-    width: 102px;
-    height: 100px;
+    width: 90px;
+    height: 88px;
+    margin-top: -20vh;
     background: #f7f7f9;
     border-radius: 8px;
     background-image: url("../images/mobile/cs.svg");
@@ -2528,10 +2533,8 @@ form button:active {
   }
 
   .lang-cs h3 {
-    left: 70vw;
-    top: 360px;
-    text-align: center;
-    align-items: flex-start;
+    left: 72vw;
+    top: 31.5%;
   }
 
   .framework h3 {
@@ -2541,14 +2544,14 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     height: 216px;
-    top: 420px;
+    top: 350px;
     left: 50vw;
   }
 
   .framework img {
     left: 85vw;
     right: 20%;
-    top: 420px;
+    top: 350px;
     bottom: 20%;
     flex: none;
     order: 0;
@@ -2560,8 +2563,9 @@ form button:active {
     height: 1px;
     left: 50vw;
     right: 25vw;
-    top: 480px;
+    top: 400px;
     bottom: 80px;
+    width: 35vw;
     background: #dfe1e6;
     margin-left: 24px;
   }
@@ -2573,14 +2577,14 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     height: 216px;
-    top: 500px;
+    top: 420px;
     left: 50vw;
   }
 
   .skill img {
     left: 85vw;
     right: 20%;
-    top: 500px;
+    top: 420px;
     bottom: 20%;
     flex: none;
     order: 0;
@@ -2592,7 +2596,8 @@ form button:active {
     height: 1px;
     left: 50vw;
     right: 25vw;
-    top: 550px;
+    width: 35vw;
+    top: 470px;
     bottom: 80px;
     background: #dfe1e6;
     margin-left: 24px;

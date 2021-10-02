@@ -49,7 +49,7 @@ header {
   align-content: space-between;
   left: 0;
   right: 0;
-  top: 10px;
+  top: 0;
   bottom: 0;
 }
 
@@ -670,7 +670,7 @@ header {
   position: absolute;
   width: 124px;
   height: 48px;
-  left: 55px;
+  left: 58px;
   background: #fff;
   border: 1px solid #6070ff;
   box-sizing: border-box;
@@ -1200,12 +1200,12 @@ header {
   position: static;
   width: 90%;
   height: 320.15px;
-  left: 0;
+  /* left: 0;
   top: 0;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 0;
+  margin: 0 0; */
 }
 
 .lang-frame {
@@ -1630,20 +1630,30 @@ form button:active {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   body {
     width: 100%;
   }
 
   header {
     position: absolute;
-    width: 95vw;
+    width: 100%;
+    height: 72px;
+    left: 0;
+    top: 0;
+    
+  }
+
+  .nav-container {
+    position: absolute;
+    width: 100%;
     height: 72px;
     left: 0;
     top: 0;
   }
 
-  .menu-icon {
+  .nav-container
+  .nav-item {
     display: none;
   }
 
@@ -1682,9 +1692,8 @@ form button:active {
     align-items: center;
     padding: 0;
     position: absolute;
-    width: 259px;
     height: 40px;
-    left: 1039px;
+    left: 730px;
     top: 16px;
   }
 
@@ -1779,10 +1788,10 @@ form button:active {
     background-size: contain;
     background-position: right 5vw bottom 1vh;
     position: absolute;
-    width: 97%;
+    width: 100%;
     height: 621.46px;
-    left: 34.6px;
-    top: 1vh;
+    left: 0;
+    top: .1vh;
   }
 
   .headline {
@@ -1791,15 +1800,15 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     position: absolute;
-    width: 60%;
-    height: 268px;
-    left: 260px;
+    width: 80%;
+    height: 50vh;
+    left: 12vw;
     top: calc(50% - 268px / 2);
   }
 
   .headline h1 {
     position: static;
-    width: 45%;
+    width: 50%;
     height: 122px;
     left: 0;
     top: 0;
@@ -1815,58 +1824,39 @@ form button:active {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 12px 0;
+    margin: 1px 0;
   }
 
   .headline p {
     position: static;
-    width: 920px;
+    width: 95%;
     height: 98px;
-    padding: 2vh 0 5vw;
     left: 0;
-    top: 134px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px;
     color: #344563;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 12px 0;
   }
 
   .social-media {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
     position: static;
     width: 117px;
     height: 24px;
     left: 0;
-    top: 244px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 12px 0;
   }
 
   .social-media-text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
-    position: static;
     width: 80%;
     height: 24px;
     left: 0;
-    top: 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 16px 0;
   }
 
   .social-media-text h2 {
@@ -1880,14 +1870,14 @@ form button:active {
     font-size: 15px;
     line-height: 24px;
     color: #7f8cff;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0 8px;
   }
 
-  .social-media-image {
-    padding-top: 0.5vh;
+  .social-media-image ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 2vw;
+    margin: 2px;
   }
 
   .work {
@@ -1900,50 +1890,41 @@ form button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow-x: hidden;
+    width: 98%;
     background: #fff;
-    grid-gap: 10px;
+    grid-gap: 2px;
+    height: 67vh;
   }
-
-  .card {
-    flex-direction: row-reverse;
-  }
-
+  
   .project1 {
     display: grid;
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
-    background: url(../images/desktop/work1.svg);
+    width: 510px;
+    height: 438px;
+    background-image: url(../images/desktop/work1.svg);
+    background-repeat: no-repeat;
     border-radius: 8px;
   }
 
   .project3 {
     display: grid;
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
+    width: 500px;
+    height: 438px;
     background: url(../images/desktop/work3.svg);
     border-radius: 8px;
   }
 
   .project2 {
     display: grid;
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
+    width: 500px;
+    height: 438px;
     background: url(../images/desktop/work2.svg);
     border-radius: 8px;
   }
 
   .project4 {
     display: grid;
-    width: 544px;
-    height: 448px;
-    left: 24px;
-    top: 24px;
+    width: 510px;
+    height: 438px;
     background: url(../images/desktop/work4.svg);
     border-radius: 8px;
   }
@@ -1952,7 +1933,7 @@ form button:active {
   .card-text2 {
     display: grid;
     padding: 24px;
-    width: 544px;
+    width: 424px;
     height: 445px;
     left: 590px;
     top: 24px;
@@ -1981,17 +1962,12 @@ form button:active {
     position: static;
     width: 496px;
     height: 46px;
-    left: 0;
-    top: 0;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 52px;
     color: #091e42;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     margin: 12px 0;
   }
 
@@ -2114,22 +2090,16 @@ form button:active {
     margin: 0 0;
   }
 
-  .frame p {
-    display: flex;
-    width: 496px;
+  .frame p,
+  .frame2 p {
+    width: 90%;
     height: 50px;
-    left: 24px;
-    top: 146px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 24px 0;
   }
 
   .tag,
@@ -2293,6 +2263,8 @@ form button:active {
 
   .about {
     width: 100%;
+    height: 846px;
+    top: 3535px;
     background: #fff;
     border-top-right-radius: 100px;
   }
@@ -2300,15 +2272,17 @@ form button:active {
   .about-content {
     display: flex;
     flex-direction: row;
+    width: 80%;
     left: 4vw;
+    height: 60vh;
+    gap: 2px;
   }
 
   .about-content-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 500px;
-    width: 49%;
+    width: 50%;
   }
 
   .about-content-top h3 {
@@ -2334,6 +2308,7 @@ form button:active {
     display: flex;
     width: 447px;
     height: 102px;
+    padding: 0 6vw 0 0;
     left: 0;
     top: 126px;
     font-family: "Poppins", sans-serif;
@@ -2420,13 +2395,8 @@ form button:active {
     padding: 8px;
     width: 40px;
     height: 40px;
-    left: 1.5vw;
+    left: 10vw;
     top: 450px;
-    border-radius: 8px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-bottom: 2px;
   }
 
   .linkedin-icon-about {
@@ -2435,12 +2405,8 @@ form button:active {
     padding: 8px;
     width: 40px;
     height: 40px;
-    left: 3.5vw;
+    left: 14vw;
     top: 450px;
-    border-radius: 8px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 
   .finger-icon-about {
@@ -2450,13 +2416,8 @@ form button:active {
     padding: 8px;
     width: 12vw;
     height: 40px;
-    left: 6vw;
+    left: 15vw;
     top: 450px;
-    border-radius: 8px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0 0;
   }
 
   .twitter-icon-about {
@@ -2466,13 +2427,8 @@ form button:active {
     padding: 8px;
     width: 40px;
     height: 40px;
-    left: 5.7vw;
+    left: 23vw;
     top: 450px;
-    border-radius: 8px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 0 0;
   }
 
   .about-m-icon {
@@ -2482,13 +2438,8 @@ form button:active {
     padding: 8px;
     width: 40px;
     height: 40px;
-    left: 8.5vw;
+    left: 27vw;
     top: 450px;
-    border-radius: 8px;
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-    margin: 0 0;
   }
 
   .resume {
@@ -2501,28 +2452,31 @@ form button:active {
     align-items: center;
     padding: 0;
     width: 50%;
-    height: 500px;
   }
 
   .languages {
     display: flex;
-    width: 684px;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
     position: static;
     height: 216px;
   }
 
   .lang-frame .dropdown {
-    left: 68vw;
+    left: 85vw;
     right: 20%;
-    top: 200px;
+    top: 150px;
     bottom: 20%;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0 0;
+  }
+
+  .lang-list {
+    display: flex;
+    flex-direction: row;
+    left: 10vw;
+    gap: 4px;
   }
 
   .lang-frame h3 {
@@ -2538,23 +2492,52 @@ form button:active {
     color: #000;
   }
 
+  .lang-js {
+    width: 102px;
+    height: 100px;
+    left: 50vw;
+    background: #f7f7f9;
+    border-radius: 8px;
+    background-image: url('../images/mobile/js.svg');
+    background-repeat: no-repeat;
+  }
+
   .lang-js h3 {
-    left: 60vw;
-    top: 330px;
+    left: 47vw;
+    top: 360px;
     text-align: center;
     align-items: flex-start;
+  }
+
+  .lang-htm {
+    width: 102px;
+    height: 100px;
+    top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    background-image: url('../images/mobile/htm.svg');
+    background-repeat: no-repeat;
   }
 
   .lang-htm h3 {
     left: 60vw;
-    top: 420px;
+    top: 360px;
     text-align: center;
     align-items: flex-start;
   }
 
+  .lang-cs  {
+    width: 102px;
+    height: 100px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    background-image: url('../images/mobile/cs.svg');
+    background-repeat: no-repeat;
+  }
+
   .lang-cs h3 {
-    left: 60vw;
-    top: 510px;
+    left: 70vw;
+    top: 360px;
     text-align: center;
     align-items: flex-start;
   }
@@ -2566,14 +2549,14 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     height: 216px;
-    top: 600px;
+    top: 420px;
     left: 50vw;
   }
 
   .framework img {
-    left: 68vw;
+    left: 85vw;
     right: 20%;
-    top: 600px;
+    top: 420px;
     bottom: 20%;
     flex: none;
     order: 0;
@@ -2585,11 +2568,10 @@ form button:active {
     height: 1px;
     left: 50vw;
     right: 25vw;
-    top: 650px;
+    top: 480px;
     bottom: 80px;
     background: #dfe1e6;
     margin-left: 24px;
-    margin-right: 24px;
   }
 
   .skill h3 {
@@ -2599,14 +2581,14 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     height: 216px;
-    top: 700px;
+    top: 500px;
     left: 50vw;
   }
 
   .skill img {
-    left: 68vw;
+    left: 85vw;
     right: 20%;
-    top: 700px;
+    top: 500px;
     bottom: 20%;
     flex: none;
     order: 0;
@@ -2618,7 +2600,7 @@ form button:active {
     height: 1px;
     left: 50vw;
     right: 25vw;
-    top: 750px;
+    top: 550px;
     bottom: 80px;
     background: #dfe1e6;
     margin-left: 24px;
@@ -2628,22 +2610,32 @@ form button:active {
   .contact {
     display: grid;
     width: 100%;
+    height: 946px;
+    left: 0;
+    top: 4350px;
     overflow-x: hidden;
   }
 
   .contact-form {
     background-image: url(../images/desktop/desktop-contact-background.svg);
     background-repeat: no-repeat;
+    height: 946px;
   }
 
   .contact-form h3 {
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .contact-form p {
     width: 40%;
     text-align: center;
     margin-left: 25vw;
+    
   }
 
   .form-content {
@@ -2657,5 +2649,9 @@ form button:active {
   form button {
     left: 33vw;
     top: 377px;
+  }
+
+  .shape {
+    display: none;
   }
 }

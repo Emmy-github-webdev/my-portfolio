@@ -1859,7 +1859,7 @@ form button:active {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
     color: #7f8cff;
   }
@@ -2328,7 +2328,6 @@ form button:active {
     flex: none;
     order: 2;
     flex-grow: 0;
-    /* margin: 12px 0; */
   }
 
   .social-text-about {

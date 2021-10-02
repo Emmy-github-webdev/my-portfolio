@@ -2341,10 +2341,6 @@ form button:active {
     height: 24px;
     left: 0;
     top: 0;
-    /* flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 16px 0; */
   }
 
   .social-text-about h2 {

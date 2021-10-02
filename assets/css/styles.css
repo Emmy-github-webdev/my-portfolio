@@ -1652,6 +1652,17 @@ form button:active {
     top: 0;
   }
 
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    height: 40px;
+    left: 730px;
+    top: 16px;
+  }
+
   .nav-container
   .nav-item {
     display: none;
@@ -1668,7 +1679,7 @@ form button:active {
     left: 143px;
     top: calc(50% - 40px / 2);
   }
-
+  
   .logo img {
     position: static;
     width: 76px;
@@ -1685,18 +1696,7 @@ form button:active {
     text-align: center;
     color: #6070ff;
   }
-
-  .nav-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    position: absolute;
-    height: 40px;
-    left: 730px;
-    top: 16px;
-  }
-
+  
   .nav-item1,
   .nav-item2,
   .nav-item3 {
@@ -1912,7 +1912,7 @@ form button:active {
     background: url(../images/desktop/work3.svg);
     border-radius: 8px;
   }
-
+  
   .project2 {
     display: grid;
     width: 500px;
@@ -2541,7 +2541,7 @@ form button:active {
     text-align: center;
     align-items: flex-start;
   }
-
+  
   .framework h3 {
     display: flex;
     width: 684px;
@@ -2552,7 +2552,7 @@ form button:active {
     top: 420px;
     left: 50vw;
   }
-
+  
   .framework img {
     left: 85vw;
     right: 20%;
@@ -2635,9 +2635,8 @@ form button:active {
     width: 40%;
     text-align: center;
     margin-left: 25vw;
-    
   }
-
+  
   .form-content {
     display: flex;
     flex-direction: column;
@@ -2645,12 +2644,12 @@ form button:active {
     left: 100px;
     justify-self: center;
   }
-
+  
   form button {
     left: 33vw;
     top: 377px;
   }
-
+  
   .shape {
     display: none;
   }

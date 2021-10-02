@@ -2341,6 +2341,10 @@ form button:active {
     height: 24px;
     left: 0;
     top: 0;
+    /* flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0; */
   }
 
   .social-text-about h2 {
@@ -2449,11 +2453,6 @@ form button:active {
     height: 216px;
   }
 
-  .lang-frame h3 {
-    top: 150px;
-    bottom: 20%;
-  }
-
   .lang-frame .dropdown {
     left: 85vw;
     right: 20%;
@@ -2484,7 +2483,18 @@ form button:active {
     align-items: center;
     color: #000;
   }
-  
+
+  .lang-js {
+    width: 90px;
+    height: 88px;
+    margin-top: -20vh;
+    left: 50vw;
+    background: #f7f7f9;
+    border-radius: 8px;
+    background-image: url("../images/mobile/js.svg");
+    background-repeat: no-repeat;
+  }
+
   .lang-js h3 {
     left: 47vw;
     top: 31.5%;
@@ -2504,7 +2514,6 @@ form button:active {
   .lang-htm h3 {
     left: 60vw;
     top: 31.5%;
-  
   }
 
   .lang-cs {
@@ -2521,7 +2530,7 @@ form button:active {
     left: 72vw;
     top: 31.5%;
   }
-  
+
   .framework h3 {
     display: flex;
     width: 684px;

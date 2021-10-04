@@ -1644,6 +1644,7 @@ form button:active {
 @media screen and (min-width: 1024px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 
   header {
@@ -1778,7 +1779,7 @@ form button:active {
     position: relative;
     top: 65px;
     width: 100vw;
-    height: 5410px;
+    height: 5230px;
     background: #f7f7f9;
     overflow-x: hidden;
   }
@@ -2249,7 +2250,7 @@ form button:active {
   .about {
     width: 100%;
     height: 846px;
-    top: 3535px;
+    top: 3520px;
     background: #fff;
     border-top-right-radius: 100px;
   }

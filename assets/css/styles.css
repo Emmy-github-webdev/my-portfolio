@@ -1778,6 +1778,7 @@ form button:active {
     width: 100%;
     height: 5125px;
     background: #f4f5f7;
+    overflow-x: hidden;
   }
 
   .header-page {
@@ -2497,7 +2498,7 @@ form button:active {
   }
 
   .lang-htm h3 {
-    left: 61vw;
+    left: 62vw;
     top: 31.5%;
   }
 
@@ -2512,7 +2513,7 @@ form button:active {
   }
 
   .lang-cs h3 {
-    left: 74vw;
+    left: 72vw;
     top: 31.5%;
   }
 

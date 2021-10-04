@@ -383,7 +383,6 @@ header {
 
 .card-header h3 {
   position: static;
-  width: 10vw;
   height: 36px;
   left: 0;
   top: 0;
@@ -1899,7 +1898,7 @@ form button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow-x: hidden;
-    width: 98%;
+    width: 96%;
     background: #fff;
     grid-gap: 2px;
     height: 67vh;
@@ -1907,33 +1906,34 @@ form button:active {
 
   .project1 {
     display: grid;
-    width: 510px;
-    height: 438px;
+    width: 400px;
+    height: 90%;
     background-image: url(../images/desktop/work1.svg);
     background-repeat: no-repeat;
     border-radius: 8px;
+    overflow: hidden;
   }
 
   .project3 {
     display: grid;
-    width: 500px;
-    height: 438px;
+    width: 400px;
+    height: 90%;
     background: url(../images/desktop/work3.svg);
     border-radius: 8px;
   }
 
   .project2 {
     display: grid;
-    width: 500px;
-    height: 438px;
+    width: 400px;
+    height: 90%;
     background: url(../images/desktop/work2.svg);
     border-radius: 8px;
   }
 
   .project4 {
     display: grid;
-    width: 510px;
-    height: 438px;
+    width: 400px;
+    height: 90%;
     background: url(../images/desktop/work4.svg);
     border-radius: 8px;
   }
@@ -1941,11 +1941,11 @@ form button:active {
   .card-text,
   .card-text2 {
     display: grid;
-    padding: 24px;
-    width: 424px;
-    height: 445px;
+    padding: 0 0 0 24px;
+    width: 400px;
+    height: 90%;
     left: 590px;
-    top: 14px;
+    top: 0;
     background-color: #fff;
   }
 
@@ -1956,28 +1956,18 @@ form button:active {
     align-items: flex-start;
     padding: 0;
     position: static;
-    width: 496px;
-    height: 98px;
-    left: 24px;
-    top: calc(50% - 98px / 2 - 149.5px);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 24px 0;
+    width: 360px;
   }
 
   .card-header h3,
   .card-header2 h3 {
     position: static;
-    width: 496px;
-    height: 46px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 52px;
     color: #091e42;
-    margin: 12px 0;
   }
 
   .frame ul,
@@ -1986,15 +1976,11 @@ form button:active {
     flex-direction: row;
     align-items: center;
     padding: 0;
-    position: static;
     width: 297px;
     height: 40px;
     left: 0;
     top: 58px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 12px 0;
+    margin: 2px 0;
   }
 
   .client {
@@ -2246,25 +2232,12 @@ form button:active {
   }
 
   .see-more-detail {
+    position: static;
     display: grid;
-    width: 486px;
-    height: 133px;
-    left: 24px;
-    top: 260px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 24px 0;
   }
 
   .button {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    width: auto;
-    height: 48px;
-    left: 120px;
     border: 1px solid #6070ff;
     border-radius: 8px;
     margin-left: 50vw;
@@ -2497,8 +2470,8 @@ form button:active {
   }
 
   .lang-js {
-    width: 90px;
-    height: 88px;
+    width: 108px;
+    height: 100px;
     margin-top: -20vh;
     left: 50vw;
     background: #f7f7f9;
@@ -2513,8 +2486,8 @@ form button:active {
   }
 
   .lang-htm {
-    width: 90px;
-    height: 88px;
+    width: 108px;
+    height: 100px;
     margin-top: -20vh;
     top: 12px;
     background: #f7f7f9;
@@ -2524,13 +2497,13 @@ form button:active {
   }
 
   .lang-htm h3 {
-    left: 60vw;
+    left: 61vw;
     top: 31.5%;
   }
 
   .lang-cs {
-    width: 90px;
-    height: 88px;
+    width: 108px;
+    height: 100px;
     margin-top: -20vh;
     background: #f7f7f9;
     border-radius: 8px;
@@ -2539,7 +2512,7 @@ form button:active {
   }
 
   .lang-cs h3 {
-    left: 72vw;
+    left: 74vw;
     top: 31.5%;
   }
 

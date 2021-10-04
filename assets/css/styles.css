@@ -1627,6 +1627,7 @@ form button:active {
 @media screen and (min-width: 1024px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 
   header {

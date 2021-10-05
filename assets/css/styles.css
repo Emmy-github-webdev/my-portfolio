@@ -147,7 +147,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -229,11 +229,11 @@ header {
 .social-media-image ul {
   display: flex;
   position: static;
+  gap: 3vw;
   width: 170.17px;
   height: 20px;
   left: 24px;
   padding: 20px 0;
-  gap: 3vw;
   top: 0;
   flex: none;
   order: 3;
@@ -301,7 +301,7 @@ header {
   padding: 16px;
   position: static;
   width: 90vw;
-  height: 640px;
+  height: 600px;
   left: calc(50% - 327px / 2);
   top: 114px;
   background: #fff;
@@ -311,7 +311,7 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 68px 0;
+  margin: 88px 0;
   justify-self: center;
 }
 
@@ -385,6 +385,7 @@ header {
 
 .card-header h3 {
   position: static;
+  height: 36px;
   left: 0;
   top: 0;
   font-family: "Poppins", sans-serif;
@@ -977,10 +978,10 @@ header {
   align-items: center;
   padding: 114px 0;
   position: absolute;
-  width: 100vw;
+  width: 99.9vw;
   height: 1125.15px;
   left: 0;
-  top: 4000px;
+  top: 3990px;
   background: #fff;
   border-top-right-radius: 70px;
 }
@@ -1644,7 +1645,6 @@ form button:active {
 @media screen and (min-width: 1024px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
 
   header {
@@ -1777,16 +1777,13 @@ form button:active {
   .homepage {
     display: grid;
     position: relative;
-    top: 65px;
-    width: 100vw;
-    height: 5230px;
-    background: #f7f7f9;
-    overflow-x: hidden;
+    width: 99.9vw;
+    height: 5125px;
+    background: #f4f5f7;
   }
 
   .header-page {
-    position: absolute;
-    width: 100%;
+    width: 99.9vw;
     height: 721.46px;
     left: 0;
     top: 0;
@@ -1893,7 +1890,7 @@ form button:active {
   }
 
   .work {
-    width: 100%;
+    width: 99.9vw;
     display: grid;
   }
 
@@ -2250,7 +2247,7 @@ form button:active {
   .about {
     width: 100%;
     height: 846px;
-    top: 3520px;
+    top: 3535px;
     background: #fff;
     border-top-right-radius: 100px;
   }
@@ -2501,7 +2498,7 @@ form button:active {
   }
 
   .lang-htm h3 {
-    left: 61vw;
+    left: 62vw;
     top: 31.5%;
   }
 
@@ -2516,7 +2513,7 @@ form button:active {
   }
 
   .lang-cs h3 {
-    left: 70vw;
+    left: 73vw;
     top: 31.5%;
   }
 
@@ -2589,11 +2586,10 @@ form button:active {
 
   .contact {
     display: grid;
-    width: 100%;
+    width: 99.9vw;
     height: 946px;
     left: 0;
     top: 4350px;
-    overflow-x: hidden;
   }
 
   .contact-form {

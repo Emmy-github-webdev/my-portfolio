@@ -15,7 +15,7 @@ If you like what you see and have a project you need coded, don't hesitate to co
 
 # Live Demo
 
-[Live Demo Link](https://github.com/Emmy-github-webdev/my-portfolio).
+[Live Demo Link](https://emmy-github-webdev.github.io/my-portfolio/).
 
 # Getting Started
 

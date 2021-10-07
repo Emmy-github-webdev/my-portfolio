@@ -1702,10 +1702,6 @@ form button:active {
     margin-left: 80px;
   }
   
-  .see-more-detail a {
-    left: 7vw;
-  }
-
   .lang-js h3 {
     left: 40%;
   }
@@ -1718,12 +1714,11 @@ form button:active {
     left: 40%;
   }
 }
-
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
-
+  
   header {
     position: absolute;
     width: 100%;

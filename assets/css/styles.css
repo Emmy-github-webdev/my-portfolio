@@ -1640,14 +1640,14 @@ form button:active {
     top: 16px;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
   .nav-item1 a,
   .nav-item2 a,
   .nav-item3 a {
     color: #344563;
-  }
-  
-  .menu-icon {
-    display: none;
   }
   
   .nav-item1,
@@ -1659,15 +1659,15 @@ form button:active {
     padding: 10px 12px;
     position: static;
     height: 40px;
+    margin: 0 8px;
     top: 0;
     flex: none;
     flex-grow: 0;
-    margin: 0 8px;
   }
   
   .headline {
-    left: 9vw;
     margin-top: 1vh;
+    left: 9vw;
   }
 
   .headline h1 {
@@ -1699,7 +1699,7 @@ form button:active {
   }
   
   .see-more-detail .button {
-    margin-left: 12vw;
+    margin-left: 80px;
   }
   
   .see-more-detail a {
@@ -1713,7 +1713,7 @@ form button:active {
   .lang-htm h3 {
     left: 40%;
   }
-
+  
   .lang-cs h3 {
     left: 40%;
   }

@@ -1645,11 +1645,11 @@ form button:active {
   .nav-item3 a {
     color: #344563;
   }
-
+  
   .menu-icon {
     display: none;
   }
-
+  
   .nav-item1,
   .nav-item2,
   .nav-item3 {
@@ -2710,8 +2710,4 @@ form button:active {
   .shape {
     display: none;
   }
-}
-
-@media screen and (min-width: 768px){
-
 }

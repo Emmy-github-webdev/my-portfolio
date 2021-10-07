@@ -1664,7 +1664,7 @@ form button:active {
     flex-grow: 0;
     margin: 0 8px;
   }
-
+  
   .headline {
     left: 9vw;
     margin-top: 1vh;
@@ -1705,7 +1705,7 @@ form button:active {
   .see-more-detail .button {
     margin-left: 12vw;
   }
-
+  
   .see-more-detail a {
     left: 7vw;
   }
@@ -2318,7 +2318,7 @@ form button:active {
     display: grid;
   }
 
-  .button {
+  .see-more-detail .button {
     display: flex;
     border: 1px solid #6070ff;
     border-radius: 8px;

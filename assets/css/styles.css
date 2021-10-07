@@ -1849,7 +1849,7 @@ form button:active {
     display: grid;
     position: relative;
     width: 99.9vw;
-    height: 5125px;
+    height: 512px;
     background: #f4f5f7;
   }
 
@@ -1973,7 +1973,7 @@ form button:active {
     width: 96%;
     background: #fff;
     grid-gap: 2px;
-    height: 67vh;
+    height: 60vh;
   }
 
   .project1 {

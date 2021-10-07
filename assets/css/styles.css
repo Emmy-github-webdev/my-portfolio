@@ -1628,7 +1628,6 @@ form button:active {
 }
 
 @media screen and (min-width: 600px) {
-
   .nav-item {
     display: flex;
     flex-direction: row;
@@ -1649,7 +1648,7 @@ form button:active {
   .nav-item3 a {
     color: #344563;
   }
-  
+
   .nav-item1,
   .nav-item2,
   .nav-item3 {
@@ -1664,7 +1663,7 @@ form button:active {
     flex: none;
     flex-grow: 0;
   }
-  
+
   .headline {
     margin-top: 1vh;
     left: 9vw;
@@ -1687,7 +1686,6 @@ form button:active {
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 12px 0;
   }
 
   .card-header {
@@ -1697,11 +1695,11 @@ form button:active {
   .card-header p {
     width: 80%;
   }
-  
+
   .see-more-detail .button {
     margin-left: 80px;
   }
-  
+
   .lang-js h3 {
     left: 40%;
   }
@@ -1709,16 +1707,17 @@ form button:active {
   .lang-htm h3 {
     left: 40%;
   }
-  
+
   .lang-cs h3 {
     left: 40%;
   }
 }
+
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
-  
+
   header {
     position: absolute;
     width: 100%;

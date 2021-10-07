@@ -1697,11 +1697,7 @@ form button:active {
   .card-header p {
     width: 80%;
   }
-
-  .see-more-detail {
-    margin-left: 10vw;
-  }
-
+  
   .see-more-detail .button {
     margin-left: 12vw;
   }

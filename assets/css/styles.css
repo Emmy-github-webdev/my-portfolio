@@ -58,6 +58,7 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
+  margin-left: 4vw;
   position: absolute;
   width: 100px;
   height: 40px;
@@ -95,6 +96,7 @@ header {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
+  margin-left: 60%;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -140,7 +142,7 @@ header {
 
 .headline h1 {
   position: static;
-  width: 70vw;
+  width: 75vw;
   height: 150px;
   left: 24px;
   top: 114px;
@@ -1293,7 +1295,7 @@ header {
 .lang-js h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 710px;
   font-family: "Poppins", sans-serif;
@@ -1327,7 +1329,7 @@ header {
 .lang-htm h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 805px;
   font-family: "Poppins", sans-serif;
@@ -1361,7 +1363,7 @@ header {
 .lang-cs h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 890px;
   font-family: "Poppins", sans-serif;
@@ -1625,7 +1627,103 @@ form button:active {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    height: 50px;
+    left: 55%;
+    top: 16px;
+  }
+
+  .nav-item1 a,
+  .nav-item2 a,
+  .nav-item3 a {
+    color: #344563;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-item1,
+  .nav-item2,
+  .nav-item3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: static;
+    height: 40px;
+    top: 0;
+    flex: none;
+    flex-grow: 0;
+    margin: 0 8px;
+  }
+
+  .headline {
+    left: 9vw;
+    margin-top: 1vh;
+  }
+
+  .headline h1 {
+    width: 70%;
+  }
+
+  .card {
+    display: flex;
+    width: 70vw;
+  }
+
+  .card-text {
+    width: 65vw;
+    height: 288px;
+    margin-left: 7vw;
+    top: 248px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .card-header {
+    width: 65vw;
+  }
+
+  .card-header p {
+    width: 80%;
+  }
+
+  .see-more-detail {
+    margin-left: 10vw;
+  }
+
+  .see-more-detail .button {
+    margin-left: 12vw;
+  }
+
+  .see-more-detail a {
+    left: 7vw;
+  }
+
+  .lang-js h3 {
+    left: 40%;
+  }
+
+  .lang-htm h3 {
+    left: 40%;
+  }
+
+  .lang-cs h3 {
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
@@ -2612,4 +2710,8 @@ form button:active {
   .shape {
     display: none;
   }
+}
+
+@media screen and (min-width: 768px){
+
 }

@@ -58,6 +58,7 @@ header {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
+  margin-left: 4vw;
   position: absolute;
   width: 100px;
   height: 40px;
@@ -95,6 +96,7 @@ header {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
+  margin-left: 60%;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -140,7 +142,7 @@ header {
 
 .headline h1 {
   position: static;
-  width: 70vw;
+  width: 75vw;
   height: 150px;
   left: 24px;
   top: 114px;
@@ -219,7 +221,7 @@ header {
   font-weight: 500;
   font-size: 13px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #4d5eff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1091,7 +1093,7 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #4d5eff;
 }
 
 .social-icon-about {
@@ -1293,7 +1295,7 @@ header {
 .lang-js h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 710px;
   font-family: "Poppins", sans-serif;
@@ -1327,7 +1329,7 @@ header {
 .lang-htm h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 805px;
   font-family: "Poppins", sans-serif;
@@ -1361,7 +1363,7 @@ header {
 .lang-cs h3 {
   position: absolute;
   height: 24px;
-  left: 76px;
+  left: 40%;
   right: 12px;
   top: 890px;
   font-family: "Poppins", sans-serif;
@@ -1642,7 +1644,93 @@ form button:active {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    height: 50px;
+    left: 55%;
+    top: 16px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-item1 a,
+  .nav-item2 a,
+  .nav-item3 a {
+    color: #344563;
+  }
+
+  .nav-item1,
+  .nav-item2,
+  .nav-item3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: static;
+    height: 40px;
+    margin: 0 8px;
+    top: 0;
+    flex: none;
+    flex-grow: 0;
+  }
+
+  .headline {
+    margin-top: 1vh;
+    left: 9vw;
+  }
+
+  .headline h1 {
+    width: 70%;
+  }
+
+  .card {
+    display: flex;
+    width: 70vw;
+  }
+
+  .card-text {
+    width: 65vw;
+    height: 288px;
+    margin-left: 7vw;
+    top: 248px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .card-header {
+    width: 65vw;
+  }
+
+  .card-header p {
+    width: 80%;
+  }
+
+  .see-more-detail .button {
+    margin-left: 80px;
+  }
+
+  .lang-js h3 {
+    left: 40%;
+  }
+
+  .lang-htm h3 {
+    left: 40%;
+  }
+
+  .lang-cs h3 {
+    left: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
@@ -1778,7 +1866,7 @@ form button:active {
     display: grid;
     position: relative;
     width: 99.9vw;
-    height: 5125px;
+    height: 5210px;
     background: #f4f5f7;
   }
 
@@ -1902,7 +1990,7 @@ form button:active {
     width: 96%;
     background: #fff;
     grid-gap: 2px;
-    height: 67vh;
+    height: 60vh;
   }
 
   .project1 {
@@ -2237,7 +2325,7 @@ form button:active {
     display: grid;
   }
 
-  .button {
+  .see-more-detail .button {
     display: flex;
     border: 1px solid #6070ff;
     border-radius: 8px;

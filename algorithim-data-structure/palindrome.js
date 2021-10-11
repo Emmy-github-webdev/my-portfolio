@@ -1,0 +1,1 @@
+// Palindrome is a sentence, a word or other type of character sequence which reads the same backward as forward

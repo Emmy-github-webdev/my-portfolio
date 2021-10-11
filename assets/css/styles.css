@@ -2701,3 +2701,94 @@ form button:active {
     display: none;
   }
 }
+
+
+
+.btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.btn span {
+  width: 20px;
+  height: 2px;
+  background: #000;
+  display: flex;
+  position: absolute;
+}
+
+.btn span:nth-child(1){
+  top: 20%;
+}
+
+.btn span:nth-child(2){
+  top: 50%;
+}
+
+.btn span:nth-child(3){
+  top: 80%;
+}
+
+.btn.is-active span{
+  background: #fff;
+}
+
+.btn.is-active span:nth-child(1){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.btn.is-active span:nth-child(2){
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.btn.is-active span:nth-child(3){
+ display: none;
+}
+
+.menu {
+  background: #6070FF;
+  display: block;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 100px;
+  z-index: -1;
+  transition: .3s;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+}
+
+.menu.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.menu_list:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.menu_link {
+  position: relative;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}

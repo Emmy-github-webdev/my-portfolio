@@ -1,19 +1,28 @@
-// document.querySelector('.btn').onclick = function (e) {
-//   var menu = document.querySelector('.menu');
-//   var btn = document.querySelector('.btn');
-
-//   menu.classList.toggle('is-active');
-//   btn.classList.toggle('is-active');
-
-//   e.preventDefault();
-// }
-
-/* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById('myNav').style.width = '100%';
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
+
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById('myNav').style.width = '0%';
+}
+
+const closeBtn = document.getElementById('close-btn');
+const IconMenu = document.getElementById('click-image');
+
+// This returns an HTML collection that needs to be browsed.
+const hamItem = document.getElementsByClassName('nav-list');
+
+// Event listeners
+closeBtn.addEventListener('click', () => {
+  closeNav();
+});
+IconMenu.addEventListener('click', () => {
+  openNav();
+});
+// Iterating the hamItem HTMLCollection
+for (let index = 0; index < hamItem.length; index += 1) {
+  hamItem[index].addEventListener('click', () => {
+    closeNav();
+  });
 }

@@ -743,6 +743,10 @@ header {
   color: #fff;
 }
 
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
 .see-more-detail .button a:hover {
   color: #fff;
 }
@@ -2732,10 +2736,6 @@ form button:active {
   margin-left: 5vw;
   text-align: left;
   margin-top: 30px;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
 }
 
 .overlay .closebtn {

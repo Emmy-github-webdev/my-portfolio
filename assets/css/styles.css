@@ -1685,6 +1685,7 @@ form button:active {
 
   .headline h1 {
     width: 70%;
+    max-width: 75%;
   }
 
   .card {
@@ -1729,18 +1730,18 @@ form button:active {
 
 @media screen and (min-width: 992px) {
   body {
-    width: 100%;
+    max-width: 100%;
   }
 
   header {
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: 72px;
     left: 0;
     top: 0;
   }
 
-  .nav-container {
+  nav {
     position: absolute;
     width: 100%;
     height: 72px;
@@ -1748,7 +1749,11 @@ form button:active {
     top: 0;
   }
 
-  .nav-item {
+  .overlay {
+    max-height: 20%;    
+  }
+
+  .overlay-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1757,6 +1762,14 @@ form button:active {
     height: 50px;
     left: 680px;
     top: 16px;
+  }
+
+  .overlay a:hover {
+    border-bottom: 1px solid #6070ff;;
+  }
+
+  .overlay a:focus {
+    color: #6070ff;
   }
 
   .menu-icon {
@@ -2725,7 +2738,6 @@ form button:active {
   top: 0;
   background-color: #6070ff;
   background-color: #6070ffe6;
-  overflow-x: hidden;
   filter: blur(0.4px);
   transition: 0.5s;
 }
@@ -2736,7 +2748,6 @@ form button:active {
   width: 100%;
   margin-left: 5vw;
   text-align: left;
-  margin-top: 30px;
 }
 
 .overlay .closebtn {

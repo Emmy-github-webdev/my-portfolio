@@ -2703,149 +2703,45 @@ form button:active {
   }
 }
 
-
-
-.btn {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  z-index: 2;
-  display: flex;
-  width: 20px;
-  height: 20px;
-}
-
-.btn span {
-  width: 20px;
-  height: 2px;
-  background: #000;
-  display: flex;
-  position: absolute;
-}
-
-.btn span:nth-child(1){
-  top: 20%;
-}
-
-.btn span:nth-child(2){
-  top: 50%;
-}
-
-.btn span:nth-child(3){
-  top: 80%;
-}
-
-.btn.is-active span{
-  background: #fff;
-}
-
-.btn.is-active span:nth-child(1){
-  top: 50%;
-  transform: rotate(-45deg);
-}
-
-.btn.is-active span:nth-child(2){
-  top: 50%;
-  transform: rotate(45deg);
-}
-
-.btn.is-active span:nth-child(3){
- display: none;
-}
-
-.menu {
-  background: #6070FF;
-  display: block;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 100px;
-  z-index: -1;
-  transition: .3s;
-  height: 100%;
-  opacity: 1;
-  visibility: hidden;
-}
-
-.menu.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu_list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-
-.menu_list:not(:last-child){
-  margin-bottom: 30px;
-}
-
-.menu_link {
-  position: relative;
-  display: inline-flex;
-  font-weight: bold;
-  font-size: 25px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  background-color: #6070ff; /* Blue fallback color */
-  background-color: #6070ffe6; /* Blue w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: #6070ff;
+  background-color: #6070ffe6;
+  overflow-x: hidden;
+  filter: blur(0.4px);
+  transition: 0.5s;
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 13%;
+  width: 100%;
+  margin-left: 5vw;
+  text-align: left;
+  margin-top: 30px;
 }
 
-/* The navigation links inside the overlay */
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #fff;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block;
+  transition: 0.3s;
 }
-/* When you mouse over the navigation links, change their color */
+
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
-/* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }

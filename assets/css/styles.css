@@ -333,10 +333,10 @@ header {
   margin: 12px 0;
 }
 
-.project1 {
+/* .project1 {
   background-image: url("../images/mobile/portfolio1.png");
   background-repeat: no-repeat;
-}
+} */
 
 .project2 {
   background-image: url("../images/mobile/portfolio2.svg");
@@ -737,6 +737,13 @@ header {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+}
+
+.see-project button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
 }
 
 .resume a:hover {
@@ -1750,7 +1757,7 @@ form button:active {
   }
 
   .overlay {
-    max-height: 20%;    
+    max-height: 20%;   
   }
 
   .overlay-content {
@@ -2007,7 +2014,7 @@ form button:active {
     display: grid;
     width: 400px;
     height: 90%;
-    background-image: url(../images/desktop/work1.svg);
+    /* background-image: url(../images/desktop/work1.svg); */
     background-repeat: no-repeat;
     border-radius: 8px;
     overflow: hidden;
@@ -2727,6 +2734,42 @@ form button:active {
   .shape {
     display: none;
   }
+
+  .modal-content {
+    padding: 20px 40px;
+    
+  }
+
+  .modal-content h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-frame span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .modal-content img {
+    height: 580px;
+    width: 1000px;
+  }
+
+  .modal-content p {
+    width: 600px;
+    height: 300px;
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 20vh;
+  }
+
+  .tech {
+    margin-left: 65%;
+  }
+
+  .see-project {
+    margin-left: 63%;
+  }
 }
 
 .overlay {
@@ -2755,4 +2798,150 @@ form button:active {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h3 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 1vh;
+}
+
+.card-frame {
+  padding-bottom: 3px;
+}
+
+.card-frame span {
+  padding-left: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.card-frame span:nth-child(1) {
+  color: #344563;
+}
+
+.card-frame span:nth-child(2) {
+  color: #7A869a;
+}
+
+.card-frame span:nth-child(3) {
+  color: #7A869a;
+}
+.modal-content img {
+  margin: 5px 0;
+}
+
+.modal-content p {
+  color: #344563;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.tech {
+  margin-bottom: 3px;
+}
+
+.tech span {
+  padding-left: 4px;
+  color: #6070ff;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.tech span:nth-child(1) {
+  background: #ebebff;
+  border-radius: 8px;
+  width: 53px;
+  height: 24px;
+}
+
+.tech span:nth-child(2) {
+  background: #ebebff;
+  border-radius: 8px;
+  width: 21px;
+  height: 16px;
+}
+
+.tech span:nth-child(3) {
+  background: #ebebff;
+  border-radius: 8px;
+  width: 65px;
+  height: 16px;
+}
+
+.see-project {
+  align-items: center;
+  margin-top: 3px;
+}
+
+.see-project button {
+  margin: 1vh 2vw;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.see-project button:nth-child(1){
+  width: 120px;
+  height: 48px;
+  background-image: url(../images/mobile/see-live.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 50%;
+}
+
+.see-project button:nth-child(2){
+  width: 120px;
+  height: 48px;
+  background-image: url(../images/mobile/see-github.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

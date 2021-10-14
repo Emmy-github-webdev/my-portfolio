@@ -121,60 +121,65 @@ function createProject() {
     }
     const createProjectBtn = document.createElement('a');
     createProjectBtn.className = 'see-proj-btn';
-    createProjectBtn.href = '#';
     createProjectBtn.textContent = 'See Project';
 
     createProjectBtn.addEventListener('click', () => {
-      const modalCardDiv = document.createElement('div');
-      modalCardDiv.className = 'modal-card';
-      const modalCardContentdiv = document.createElement('div');
-      modalCardContentdiv.className = 'modal-card-content';
-      const modalCardContentdivSpan = document.createElement('span');
-      modalCardContentdivSpan.className = 'close';
-      modalCardContentdivSpan.textContent = '&times;';
-      const modalCardContentdivh3 = document.createElement('h3');
-      modalCardContentdivh3.textContent = project.name;
-      modalCardContentdiv.appendChild(modalCardContentdivh3); 
+      const popUpParentDiv = document.createElement('div');
+      popUpParentDiv.className = 'parent-popup';
+      const innerPopUpDiv = document.createElement('div');
+      innerPopUpDiv.className = 'inner-popup-div';
+      const closepopUp = document.createElement('span');
+      closepopUp.className = 'close';
+      closepopUp.textContent = 'X';
+      innerPopUpDiv.appendChild(closepopUp);
+      const cardPopuph3 = document.createElement('h3');
+      cardPopuph3.textContent = project.name;
+      innerPopUpDiv.appendChild(cardPopuph3);
       const cardFrameDiv = document.createElement('div');
       cardFrameDiv.className = 'card-frame';
       for(let k = 0; k < project.frame.length; k += 1){
-        const FrameDivSpan = document.createElement('span');
-        FrameDivSpan.textContent = project.frame[k];
-        cardFrameDiv.appendChild(FrameDivSpan);
+        const frameSpan = document.createElement('span');
+        frameSpan.textContent = project.frame[k];
+        cardFrameDiv.appendChild(frameSpan);
       }
-
+      innerPopUpDiv.appendChild(cardFrameDiv);
       const cardImg = document.createElement('img');
       cardImg.src = project.featuredImage;
-      modalCardContentdiv.appendChild(cardImg);
-      const modalCardContentdivP = document.createElement('p');
-      modalCardContentdivP.textContent = project.description;
-      modalCardContentdiv.appendChild(modalCardContentdivP);
-      const techdiv = document.createElement('div');
-      techdiv.className = 'tech';
+      innerPopUpDiv.appendChild(cardImg);
+      const cardPopupP = document.createElement('p');
+      cardPopupP.textContent = project.description;
+      innerPopUpDiv.appendChild(cardPopupP);
+      const techDiv = document.createElement('div');
+      techDiv.className = 'tech';
       for(let l = 0; l < project.technologies.length; l += 1){
-        const techDivSpan = document.createElement('span');
-        techDivSpan.textContent = project.technologies[l];
-        techdiv.appendChild(techDivSpan);
+        const techpopUpSpan = document.createElement('span');
+        techpopUpSpan.textContent = project.technologies[l];
+        techDiv.appendChild(techpopUpSpan); 
       }
-      const displayProjectBtn = document.createElement('a');
-      displayProjectBtn.className = 'see-project';
-      const seeProjectLive = document.createElement('button');
-      seeProjectLive.textContent = 'See Live';
-      seeProjectLive.href = project.liveDemo;
-      const seeProjectDemo = document.createElement('button');
-      seeProjectDemo.textContent = 'See Source';
-      seeProjectDemo.href = project.sourceDemo;
-      displayProjectBtn.appendChild(seeProjectLive);
-      displayProjectBtn.appendChild(seeProjectDemo);
+      innerPopUpDiv.appendChild(techDiv);
+      const popUpSeeProjectBtnDiv = document.createElement('div');
+      popUpSeeProjectBtnDiv.className = 'see-project';
+      const popUpseeProjectBtn = document.createElement('a');
+      popUpseeProjectBtn.className = 'popup-see-proj-btn';
+      popUpseeProjectBtn.href = project.liveDemo;
+      popUpseeProjectBtn.textContent = 'See Live';
+      const popUpseeSourceBtn = document.createElement('a');
+      popUpseeSourceBtn.className = 'popup-see-source-btn';
+      popUpseeSourceBtn.href = project.sourceDemo;
+      popUpseeSourceBtn.textContent = 'See Demo'
 
+      popUpSeeProjectBtnDiv.appendChild(popUpseeProjectBtn);
+      popUpSeeProjectBtnDiv.appendChild(popUpseeSourceBtn);
 
-      modalCardContentdiv.appendChild(displayProjectBtn);
-      modalCardContentdiv.appendChild(techdiv);
-      modalCardContentdiv.appendChild(cardFrameDiv);
-      modalCardContentdiv.appendChild(modalCardContentdivSpan);
-      modalCardDiv.appendChild(modalCardContentdiv);
-      document.body.appendChild(modalCardDiv);
-      
+      innerPopUpDiv.appendChild(popUpSeeProjectBtnDiv);
+
+      popUpParentDiv.appendChild(innerPopUpDiv);
+
+      document.body.appendChild(popUpParentDiv);
+
+      closepopUp.addEventListener('click', () => {
+        popUpParentDiv.style.display = 'none';
+      })
     })
 
 

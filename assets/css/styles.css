@@ -415,10 +415,6 @@ header {
   letter-spacing: 0.03em;
 }
 
-.frame-div span {
-  padding-left: 2.3vw;
-}
-
 .card-frame span {
   font-size: 15px;
   line-height: 20px;
@@ -1768,7 +1764,7 @@ form textarea {
   }
 
   .overlay {
-    max-height: 20%;   
+    max-height: 20%;
   }
 
   .overlay-content {
@@ -1803,7 +1799,7 @@ form textarea {
     flex-grow: 0;
     margin: 0 10px;
   }
-  
+
   .nav-item1 a {
     width: 63px;
   }
@@ -1819,7 +1815,7 @@ form textarea {
   .overlay a:hover {
     border-bottom: 1px solid #6070ff;
   }
-  
+
   .overlay a:focus {
     color: #6070ff;
   }
@@ -1839,7 +1835,7 @@ form textarea {
     left: 143px;
     top: calc(50% - 40px / 2);
   }
-  
+
   .logo img {
     position: static;
     width: 76px;
@@ -1889,7 +1885,7 @@ form textarea {
     left: 173px;
     order: 2;
   }
-  
+
   .homepage {
     display: grid;
     position: relative;
@@ -1906,7 +1902,7 @@ form textarea {
     background: #fff;
     border-bottom-left-radius: 70px;
   }
-  
+
   .header-container {
     background-image: url("../images/desktop/Header-bg.svg");
     background-repeat: no-repeat;
@@ -2750,20 +2746,20 @@ form textarea {
   }
 
   .inner-popup-div {
-    height: 100vh; 
+    height: 100vh;
   }
 
   .inner-popup-div h3 {
     font-size: 40px;
     line-height: 52px;
   }
-  
+
   .inner-popup-div img {
     height: 300px;
     width: 900px;
     align-self: center;
   }
-  
+
   .inner-popup-div p {
     width: 600px;
     height: 300px;
@@ -2776,7 +2772,7 @@ form textarea {
   .tech {
     margin-left: 65%;
   }
-  
+
   .see-project {
     margin-left: 63%;
   }
@@ -2823,10 +2819,6 @@ form textarea {
   padding-bottom: 3px;
   margin-left: 0;
   width: 90%;
-} 
-
-.card-frame span {
-  margin-right: 2vw;
 }
 
 .card-frame span:nth-child(1) {
@@ -2916,7 +2908,7 @@ form textarea {
   font-size: 28px;
 }
 
-.close:hover, 
+.close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
@@ -2926,8 +2918,8 @@ form textarea {
 .parent-popup {
   position: fixed;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
   left: 0;
@@ -2942,13 +2934,13 @@ form textarea {
   width: 80%;
   height: 80%;
   background: #fff;
-  box-shadow: 0 48px 48px, rgba(0, 0, 0, 0.08);
+  box-shadow: 0 48px 48px rgba(0, 0, 0, 0.8);
   border-radius: 16px;
 }
 
 .see-proj-btn {
   position: absolute;
-  margin-top: 55%; 
+  margin-top: 55%;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;

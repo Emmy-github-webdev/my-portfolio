@@ -1,12 +1,9 @@
-//form validation
-
 const contactForm = document.querySelector('form');
 const formEmail = document.querySelector('#form-email');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log(formEmail.value);
-})
+});
 
 // Mobile menu overlay
 function openNav() {
@@ -34,7 +31,6 @@ for (let index = 0; index < hamItem.length; index += 1) {
   });
 }
 
-//pop up window modal
 const workDiv = document.querySelector('.work');
 
 const projects = [
@@ -47,7 +43,7 @@ const projects = [
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
-      'HTML', 'CSS', 'Javascript'
+      'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
     liveDemo: '#',
@@ -59,8 +55,9 @@ const projects = [
     featuredImage: '/assets/images/mobile/portfolio2.svg',
     name: 'Multi-Post Stories',
     frame: [
-      'CANOPY', 'Back End Dev', '2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'CANOPY', 'Back End Dev', '2015'
+    ],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: [
       'HTML', 'CSS', 'Javascript'
     ],
@@ -94,7 +91,7 @@ const projects = [
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
-      'HTML', 'CSS', 'Javascript'
+      'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
     liveDemo: '#',
@@ -115,7 +112,7 @@ function createProject() {
     cardTextDivH3.textContent = project.name;
     const cardFrameDiv = document.createElement('div');
     cardFrameDiv.className = 'frame-div';
-    for(let i = 0; i < project.frame.length; i += 1){
+    for (let i = 0; i < project.frame.length; i += 1) {
       const cardFrameSpan = document.createElement('span');
       cardFrameSpan.textContent = project.frame[i];
       cardFrameDiv.appendChild(cardFrameSpan);
@@ -124,7 +121,7 @@ function createProject() {
     cardTextDivP.textContent = project.description;
     const tagDiv = document.createElement('div');
     tagDiv.className = 'tag';
-    for(let j = 0; j < project.technologies.length; j += 1) {
+    for (let j = 0; j < project.technologies.length; j += 1) {
       const tagDivSpan = document.createElement('span');
       tagDivSpan.textContent = project.technologies[j];
       tagDiv.appendChild(tagDivSpan);
@@ -147,7 +144,7 @@ function createProject() {
       innerPopUpDiv.appendChild(cardPopuph3);
       const cardFrameDiv = document.createElement('div');
       cardFrameDiv.className = 'card-frame';
-      for(let k = 0; k < project.frame.length; k += 1){
+      for (let k = 0; k < project.frame.length; k += 1) {
         const frameSpan = document.createElement('span');
         frameSpan.textContent = project.frame[k];
         cardFrameDiv.appendChild(frameSpan);
@@ -161,7 +158,7 @@ function createProject() {
       innerPopUpDiv.appendChild(cardPopupP);
       const techDiv = document.createElement('div');
       techDiv.className = 'tech';
-      for(let l = 0; l < project.technologies.length; l += 1){
+      for (let l = 0; l < project.technologies.length; l += 1) {
         const techpopUpSpan = document.createElement('span');
         techpopUpSpan.textContent = project.technologies[l];
         techDiv.appendChild(techpopUpSpan); 
@@ -191,9 +188,6 @@ function createProject() {
         popUpParentDiv.style.display = 'none';
       })
     })
-
-
-
 
     cardTextDiv.appendChild(createProjectBtn);
     cardTextDiv.appendChild(tagDiv);

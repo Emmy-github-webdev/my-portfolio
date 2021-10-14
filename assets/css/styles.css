@@ -369,6 +369,10 @@ header {
   margin: 12px 0;
 }
 
+.card-text p {
+  padding-top: 2vh;
+}
+
 .card-header {
   display: flex;
   flex-direction: column;
@@ -385,7 +389,7 @@ header {
   margin: 12px 0;
 }
 
-.card-header h3 {
+.card-text h3 {
   position: static;
   height: 36px;
   left: 0;
@@ -402,7 +406,37 @@ header {
   margin: 12px 0;
 }
 
-.frame ul {
+.frame-div {
+  position: absolute;
+  margin-top: 15%;
+}
+
+.frame-div span {
+  padding-left: 2.3vw;
+}
+
+.frame-div span:nth-child(1){
+  color: #344563;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.frame-div span:nth-child(2) {
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.frame-div span:nth-child(3) {
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.card-frame {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -418,7 +452,7 @@ header {
   margin: 12px 0;
 }
 
-.client {
+.card-frame {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2712,6 +2746,10 @@ form button:active {
     line-height: 52px;
   }
 
+  .see-proj-btn {
+    margin-top: 80%;
+  }
+
   .contact-form p {
     width: 40%;
     text-align: center;
@@ -2736,8 +2774,7 @@ form button:active {
   }
 
   .inner-popup-div {
-   margin-left: 40px;
-   margin-right: 40px;    
+   height: 100vh; 
   }
 
   .inner-popup-div h3 {
@@ -2750,8 +2787,8 @@ form button:active {
     line-height: 20px;
   }
   .inner-popup-div img {
-    height: 580px;
-    width: 1000px;
+    height: 300px;
+    width: 900px;
    align-self: center;
   }
 
@@ -2812,13 +2849,12 @@ form button:active {
 
 .card-frame {
   padding-bottom: 3px;
-}
+  margin-left: 0;
+  width: 90%;
+} 
 
 .card-frame span {
-  padding-left: 4px;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: bold;
+  margin-right: 2vw;
 }
 
 .card-frame span:nth-child(1) {
@@ -2832,9 +2868,10 @@ form button:active {
 .card-frame span:nth-child(3) {
   color: #7A869a;
 }
+
 .inner-popup-div img {
   margin: 5px 0;
-  width: 95%;
+  /* width: 95%; */
   background-position: center;
 }
 
@@ -2880,8 +2917,39 @@ form button:active {
 }
 
 .see-project {
+  margin-top: 3vh;
+}
+
+.popup-see-proj-btn {
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 142px;
+  height: 40px;
   align-items: center;
-  margin-top: 3px;
+  padding: 8px 25px;
+  color: #396df2;
+  background-image: url(../images/mobile/see-live.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 50%;
+  background-size: 12%;
+}
+
+.popup-see-source-btn {
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 152px;
+  height: 40px;
+  padding: 8px 12px;
+  color: #6070ff;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/mobile/see-github.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 50%;
+  background-size: 12%;
+  margin: 0 3vw;
 }
 
 /* The Close Button */
@@ -2911,10 +2979,31 @@ form button:active {
 }
 
 .inner-popup-div {
-  background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   height: 80%;
+  background: #fff;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+}
+
+.see-proj-btn {
+  position: absolute;
+  margin-top: 55%; 
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 2px;
+  color: #396df2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  line-height: 24px;
 }

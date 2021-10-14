@@ -114,7 +114,7 @@ function createProject() {
     const cardTextDivH3 = document.createElement('h3');
     cardTextDivH3.textContent = project.name;
     const cardFrameDiv = document.createElement('div');
-    cardFrameDiv.className = 'frame';
+    cardFrameDiv.className = 'frame-div';
     for(let i = 0; i < project.frame.length; i += 1){
       const cardFrameSpan = document.createElement('span');
       cardFrameSpan.textContent = project.frame[i];

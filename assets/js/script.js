@@ -1,11 +1,3 @@
-const contactForm = document.querySelector('form');
-const formEmail = document.querySelector('#form-email');
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-});
-
-// Mobile menu overlay
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
 }
@@ -55,10 +47,10 @@ const projects = [
     featuredImage: '/assets/images/mobile/portfolio2.svg',
     name: 'Multi-Post Stories',
     frame: [
-    'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', 'Back End Dev', '2015',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      technologies: [
+    technologies: [
       'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
@@ -186,7 +178,7 @@ function createProject() {
 
       closepopUp.addEventListener('click', () => {
         popUpParentDiv.style.display = 'none';
-      })
+      });
     });
 
     cardTextDiv.appendChild(createProjectBtn);

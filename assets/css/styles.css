@@ -415,13 +415,13 @@ header {
   letter-spacing: 0.03em;
 }
 
+.frame-div span {
+  padding-left: 2.3vw;
+}
+
 .card-frame span {
   font-size: 15px;
   line-height: 20px;
-}
-
-.frame-div span {
-  padding-left: 2.3vw;
 }
 
 .frame-div span:nth-child(1) {
@@ -1839,7 +1839,7 @@ form textarea {
     left: 143px;
     top: calc(50% - 40px / 2);
   }
-
+  
   .logo img {
     position: static;
     width: 76px;
@@ -2942,7 +2942,7 @@ form textarea {
   width: 80%;
   height: 80%;
   background: #fff;
-  box-shadow: 0 48px 48px rgba(0, 0, 0 ,0.08);
+  box-shadow: 0 48px 48px, rgba(0, 0, 0, 0.08);
   border-radius: 16px;
 }
 
@@ -2954,7 +2954,6 @@ form textarea {
   border-radius: 8px;
   width: 124px;
   height: 48px;
-  align-items: center;
   padding: 12px;
   margin-bottom: 2px;
   color: #396df2;

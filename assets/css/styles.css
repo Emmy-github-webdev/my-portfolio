@@ -296,6 +296,11 @@ header {
   justify-content: center;
 }
 
+.inner-popup-div img {
+  margin: 5px 0;
+  background-position: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -1798,7 +1803,7 @@ form textarea {
     flex-grow: 0;
     margin: 0 10px;
   }
-
+  
   .nav-item1 a {
     width: 63px;
   }
@@ -1901,7 +1906,7 @@ form textarea {
     background: #fff;
     border-bottom-left-radius: 70px;
   }
-
+  
   .header-container {
     background-image: url("../images/desktop/Header-bg.svg");
     background-repeat: no-repeat;
@@ -2771,7 +2776,7 @@ form textarea {
   .tech {
     margin-left: 65%;
   }
-
+  
   .see-project {
     margin-left: 63%;
   }
@@ -2834,11 +2839,6 @@ form textarea {
 
 .card-frame span:nth-child(3) {
   color: #7a869a;
-}
-
-.inner-popup-div img {
-  margin: 5px 0;
-  background-position: center;
 }
 
 .inner-popup-div p {
@@ -2942,7 +2942,7 @@ form textarea {
   width: 80%;
   height: 80%;
   background: #fff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(0, 0, 0 ,0.08);
   border-radius: 16px;
 }
 

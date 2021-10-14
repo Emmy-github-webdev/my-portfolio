@@ -49,17 +49,17 @@ const projects = [
     liveDemo: '#',
     sourceDemo: '#',
   },
-  
+
   {
     id: 2,
     featuredImage: '/assets/images/mobile/portfolio2.svg',
     name: 'Multi-Post Stories',
     frame: [
-      'CANOPY', 'Back End Dev', '2015'
+    'CANOPY', 'Back End Dev', '2015',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       technologies: [
-      'HTML', 'CSS', 'Javascript'
+      'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
     liveDemo: '#',
@@ -75,7 +75,7 @@ const projects = [
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
-      'HTML', 'CSS', 'Javascript'
+      'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
     liveDemo: '#',
@@ -116,7 +116,7 @@ function createProject() {
       const cardFrameSpan = document.createElement('span');
       cardFrameSpan.textContent = project.frame[i];
       cardFrameDiv.appendChild(cardFrameSpan);
-    } 
+    }
     const cardTextDivP = document.createElement('p');
     cardTextDivP.textContent = project.description;
     const tagDiv = document.createElement('div');
@@ -161,7 +161,7 @@ function createProject() {
       for (let l = 0; l < project.technologies.length; l += 1) {
         const techpopUpSpan = document.createElement('span');
         techpopUpSpan.textContent = project.technologies[l];
-        techDiv.appendChild(techpopUpSpan); 
+        techDiv.appendChild(techpopUpSpan);
       }
       innerPopUpDiv.appendChild(techDiv);
       const popUpSeeProjectBtnDiv = document.createElement('div');
@@ -173,7 +173,7 @@ function createProject() {
       const popUpseeSourceBtn = document.createElement('a');
       popUpseeSourceBtn.className = 'popup-see-source-btn';
       popUpseeSourceBtn.href = project.sourceDemo;
-      popUpseeSourceBtn.textContent = 'See Demo'
+      popUpseeSourceBtn.textContent = 'See Demo';
 
       popUpSeeProjectBtnDiv.appendChild(popUpseeProjectBtn);
       popUpSeeProjectBtnDiv.appendChild(popUpseeSourceBtn);
@@ -187,17 +187,17 @@ function createProject() {
       closepopUp.addEventListener('click', () => {
         popUpParentDiv.style.display = 'none';
       })
-    })
+    });
 
     cardTextDiv.appendChild(createProjectBtn);
     cardTextDiv.appendChild(tagDiv);
     cardTextDiv.appendChild(cardTextDivP);
     cardTextDiv.appendChild(cardFrameDiv);
     cardTextDiv.appendChild(cardTextDivH3);
-    cardDiv.appendChild(cardTextDiv)
+    cardDiv.appendChild(cardTextDiv);
     cardDiv.appendChild(cardImg);
     workDiv.appendChild(cardDiv);
-  })
+  });
 }
 
 createProject();

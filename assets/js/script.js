@@ -24,7 +24,6 @@ for (let index = 0; index < hamItem.length; index += 1) {
   });
 }
 
-// Window popup - create object dynamically
 
 const workDiv = document.querySelector('.work');
 
@@ -41,7 +40,6 @@ const projects = [
       'HTML', 'CSS', 'Javascript'
     ],
     year: 2015,
-    category: 'Canopy',
     liveDemo: '#',
     sourceDemo: '#',
   },
@@ -57,7 +55,6 @@ const projects = [
       'HTML', 'CSS', 'Javascript'
     ],
     year: 2015,
-    category: 'Canopy',
     liveDemo: '#',
     sourceDemo: '#',
   },
@@ -74,7 +71,6 @@ const projects = [
       'HTML', 'CSS', 'Javascript'
     ],
     year: 2015,
-    category: 'Canopy',
     liveDemo: '#',
     sourceDemo: '#',
   },
@@ -91,95 +87,108 @@ const projects = [
       'HTML', 'CSS', 'Javascript'
     ],
     year: 2015,
-    category: 'Canopy',
     liveDemo: '#',
     sourceDemo: '#',
   },
 ];
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-function showProjects() {
+function createProject() {
   projects.forEach((project) => {
     const cardDiv = document.createElement('div');
     cardDiv.className = 'card';
-    const cardImage = document.createElement('img');
-    cardImage.className = 'project1';
-    cardImage.src = project.featuredImage;
+    const cardImg = document.createElement('img');
+    cardImg.className = 'project1';
+    cardImg.src = project.featuredImage;
     const cardTextDiv = document.createElement('div');
     cardTextDiv.className = 'card-text';
-    const cardHeaderDiv = document.createElement('div');
-    cardHeaderDiv.className = 'card-header';
-    const cardHeaderH3 = document.createElement('h3');
-    cardHeaderH3.textContent = project.name;
-    const cardHeaderFrameDiv = document.createElement('div');
-    cardHeaderFrameDiv.className = 'frame';
-    const cardHeaderFrameUl = document.createElement('ul');
-    for(let i = 0; i < project.frame.length; i+= 1){
-      const cardHeaderFrameUlLi = document.createElement('li');
-      cardHeaderFrameUlLi.textContent = project.frame[i];
-      cardHeaderFrameUl.appendChild(cardHeaderFrameUlLi);
+    const cardTextDivH3 = document.createElement('h3');
+    cardTextDivH3.textContent = project.name;
+    const cardFrameDiv = document.createElement('div');
+    cardFrameDiv.className = 'frame';
+    for(let i = 0; i < project.frame.length; i += 1){
+      const cardFrameSpan = document.createElement('span');
+      cardFrameSpan.textContent = project.frame[i];
+      cardFrameDiv.appendChild(cardFrameSpan);
+    } 
+    const cardTextDivP = document.createElement('p');
+    cardTextDivP.textContent = project.description;
+    const tagDiv = document.createElement('div');
+    tagDiv.className = 'tag';
+    for(let j = 0; j < project.technologies.length; j += 1) {
+      const tagDivSpan = document.createElement('span');
+      tagDivSpan.textContent = project.technologies[j];
+      tagDiv.appendChild(tagDivSpan);
     }
-    const cardHeaderP = document.createElement('p');
-    cardHeaderP.textContent = project.description;
-    const cardHeaderTag = document.createElement('div');
-    cardHeaderTag.className = 'tag';
-    const cardHeaderTagUl = document.createElement('ul');
-    for(let i = 0; i < project.technologies.length; i+= 1){
-      const cardHeaderTagUlLi = document.createElement('li');
-      cardHeaderTagUlLi.textContent = project.technologies[i];
-      cardHeaderTagUl.appendChild(cardHeaderTagUlLi);
-    }
-    const projectButtonDiv = document.createElement('div');
-    projectButtonDiv.className = 'see-more-detai';
-    const buttonDiv = document.createElement('div');
-    buttonDiv.className = 'buton ';
-    const buttonDivA = document.createElement('a');
-    buttonDivA.className = 'button-btn';
-    buttonDivA.href = project.liveDemo;
-    buttonDivA.textContent = 'See Project';
+    const createProjectBtn = document.createElement('a');
+    createProjectBtn.className = 'see-proj-btn';
+    createProjectBtn.href = '#';
+    createProjectBtn.textContent = 'See Project';
+
+    createProjectBtn.addEventListener('click', () => {
+      const modalCardDiv = document.createElement('div');
+      modalCardDiv.className = 'modal-card';
+      const modalCardContentdiv = document.createElement('div');
+      modalCardContentdiv.className = 'modal-card-content';
+      const modalCardContentdivSpan = document.createElement('span');
+      modalCardContentdivSpan.className = 'close';
+      modalCardContentdivSpan.textContent = '&times;';
+      const modalCardContentdivh3 = document.createElement('h3');
+      modalCardContentdivh3.textContent = project.name;
+      modalCardContentdiv.appendChild(modalCardContentdivh3); 
+      const cardFrameDiv = document.createElement('div');
+      cardFrameDiv.className = 'card-frame';
+      for(let k = 0; k < project.frame.length; k += 1){
+        const FrameDivSpan = document.createElement('span');
+        FrameDivSpan.textContent = project.frame[k];
+        cardFrameDiv.appendChild(FrameDivSpan);
+      }
+
+      const cardImg = document.createElement('img');
+      cardImg.src = project.featuredImage;
+      modalCardContentdiv.appendChild(cardImg);
+      const modalCardContentdivP = document.createElement('p');
+      modalCardContentdivP.textContent = project.description;
+      modalCardContentdiv.appendChild(modalCardContentdivP);
+      const techdiv = document.createElement('div');
+      techdiv.className = 'tech';
+      for(let l = 0; l < project.technologies.length; l += 1){
+        const techDivSpan = document.createElement('span');
+        techDivSpan.textContent = project.technologies[l];
+        techdiv.appendChild(techDivSpan);
+      }
+      const displayProjectBtn = document.createElement('a');
+      displayProjectBtn.className = 'see-project';
+      const seeProjectLive = document.createElement('button');
+      seeProjectLive.textContent = 'See Live';
+      seeProjectLive.href = project.liveDemo;
+      const seeProjectDemo = document.createElement('button');
+      seeProjectDemo.textContent = 'See Source';
+      seeProjectDemo.href = project.sourceDemo;
+      displayProjectBtn.appendChild(seeProjectLive);
+      displayProjectBtn.appendChild(seeProjectDemo);
 
 
-    cardHeaderDiv.appendChild(cardHeaderH3);
-    cardHeaderDiv.appendChild(cardHeaderFrameDiv);
-    cardHeaderFrameDiv.appendChild(cardHeaderFrameUl);
-    cardHeaderFrameDiv.appendChild(cardHeaderP);
-    cardHeaderFrameDiv.appendChild(cardHeaderTag);
-    cardHeaderTag.appendChild(cardHeaderTagUl);
-    cardHeaderFrameDiv.appendChild(projectButtonDiv);
-    projectButtonDiv.appendChild(buttonDiv);
-    buttonDiv.appendChild(buttonDivA);
+      modalCardContentdiv.appendChild(displayProjectBtn);
+      modalCardContentdiv.appendChild(techdiv);
+      modalCardContentdiv.appendChild(cardFrameDiv);
+      modalCardContentdiv.appendChild(modalCardContentdivSpan);
+      modalCardDiv.appendChild(modalCardContentdiv);
+      document.body.appendChild(modalCardDiv);
+      
+    })
 
 
-    cardHeaderDiv.appendChild(cardTextDiv);
-    cardDiv.appendChild(cardHeaderDiv);
-    cardDiv.appendChild(cardImage);
+
+
+    cardTextDiv.appendChild(createProjectBtn);
+    cardTextDiv.appendChild(tagDiv);
+    cardTextDiv.appendChild(cardTextDivP);
+    cardTextDiv.appendChild(cardFrameDiv);
+    cardTextDiv.appendChild(cardTextDivH3);
+    cardDiv.appendChild(cardTextDiv)
+    cardDiv.appendChild(cardImg);
     workDiv.appendChild(cardDiv);
-  });
+  })
 }
 
-showProjects();
+createProject();

@@ -1,3 +1,13 @@
+//form validation
+
+const contactForm = document.querySelector('form');
+const formEmail = document.querySelector('#form-email');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log(formEmail.value);
+})
+
 // Mobile menu overlay
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
@@ -24,7 +34,7 @@ for (let index = 0; index < hamItem.length; index += 1) {
   });
 }
 
-
+//pop up window modal
 const workDiv = document.querySelector('.work');
 
 const projects = [

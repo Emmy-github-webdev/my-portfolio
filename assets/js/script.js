@@ -1,5 +1,7 @@
 /* Form validation */
+const nameInput = document.getElementById('name');
 const email = document.getElementById('email');
+const message = document.getElementById('message');
 
 function checkForm(form) {
   const error = document.getElementById('errorMessage');
@@ -17,6 +19,32 @@ function checkForm(form) {
 
   form.email.focus();
   return false;
+}
+
+/* localStorage */
+let formData = {name: '', email: '', message: ''};
+
+const onChangeHandler = (event) => {
+  switch(event.name){
+    case 'name':
+      formData = {...formData, name: event.value};
+      break;
+    case 'email':
+      formData = {...formData, email: event.value};
+      break;
+    case 'message':
+      formData = {...formData, message: event.value};
+      break;
+    default:
+      break;
+  }
+  localStorage.setItem('data', JSON.stringify(formData));
+}
+const reloadBrowser = JSON.parse(localStorage.getItem('data'));
+if (reloadBrowser) {
+  formName.value = reloadBrowser.name;
+  email.value = reloadBrowser.email;
+  message.value = reloadBrowser.message;
 }
 
 /* Overlay full screen mobile menu */

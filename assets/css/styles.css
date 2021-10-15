@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Poppins;
 }
 
 a {
@@ -299,8 +300,7 @@ header {
 .inner-popup-div img {
   margin: 5px 0;
   background-position: center;
-  height: auto;
-  width: 100%;
+  width: 80%;
 }
 
 .card {
@@ -2743,10 +2743,6 @@ form textarea {
     display: none;
   }
 
-  .inner-popup-div {
-    height: 100vh;
-  }
-
   .inner-popup-div h3 {
     font-size: 40px;
     line-height: 52px;
@@ -2754,26 +2750,23 @@ form textarea {
 
   .inner-popup-div img {
     display: flex;
-    height: 300px;
-    width: auto;
+    width: 80%;
     align-self: center;
   }
 
   .inner-popup-div p {
-    width: 600px;
-    height: 300px;
     float: left;
     font-size: 16px;
     line-height: 30px;
-    padding-bottom: 20vh;
+    /* padding-bottom: 20vh; */
   }
 
   .tech {
-    margin-left: 65%;
+    /* margin-left: 65%; */
   }
 
   .see-project {
-    margin-left: 63%;
+    /* margin-left: 63%; */
   }
 }
 
@@ -2876,7 +2869,7 @@ form textarea {
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 50%;
+  width: 30%;
   height: 40px;
   align-items: center;
   padding: 8px 25px;
@@ -2894,7 +2887,7 @@ form textarea {
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 8px;
-  width: 152px;
+  width: 30%;
   height: 40px;
   padding: 8px 12px;
   color: #6070ff;
@@ -2941,10 +2934,11 @@ form textarea {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 100%;
   background: #fff;
   box-shadow: 0 48px 48px rgba(0, 0, 0, 0.8);
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .see-proj-btn {

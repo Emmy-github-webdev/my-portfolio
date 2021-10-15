@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* Form validation */
 const formName = document.getElementById('name');
 const email = document.getElementById('email');
@@ -243,5 +244,3 @@ function createProject() {
 }
 
 createProject();
-checkForm();
-document.onload = onChangeHandler;

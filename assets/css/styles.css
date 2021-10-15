@@ -299,6 +299,8 @@ header {
 .inner-popup-div img {
   margin: 5px 0;
   background-position: center;
+  height: auto;
+  width: 100%;
 }
 
 .card {
@@ -2751,8 +2753,9 @@ form textarea {
   }
 
   .inner-popup-div img {
+    display: flex;
     height: 300px;
-    width: 900px;
+    width: auto;
     align-self: center;
   }
 
@@ -2864,14 +2867,16 @@ form textarea {
 }
 
 .see-project {
-  margin-top: 3vh;
+  margin-top: 1.5vh;
+  display: flex;
 }
 
 .popup-see-proj-btn {
+  display: flex;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 142px;
+  width: 50%;
   height: 40px;
   align-items: center;
   padding: 8px 25px;
@@ -2884,6 +2889,7 @@ form textarea {
 }
 
 .popup-see-source-btn {
+  display: flex;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   cursor: pointer;
@@ -2927,6 +2933,7 @@ form textarea {
   right: 0;
   top: 0;
   z-index: 1;
+  padding: 20px 10px;
 }
 
 .inner-popup-div {
@@ -2934,7 +2941,7 @@ form textarea {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 80%;
+  height: 100%;
   background: #fff;
   box-shadow: 0 48px 48px rgba(0, 0, 0, 0.8);
   border-radius: 16px;

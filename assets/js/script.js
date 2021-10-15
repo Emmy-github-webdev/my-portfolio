@@ -244,3 +244,4 @@ function createProject() {
 
 createProject();
 checkForm();
+document.onload = onChangeHandler;

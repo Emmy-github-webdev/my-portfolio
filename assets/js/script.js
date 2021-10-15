@@ -22,24 +22,24 @@ function checkForm(form) {
 }
 
 /* localStorage */
-let formData = {name: '', email: '', message: ''};
+let formData = { name: '', email: '', message: '' };
 
 const onChangeHandler = (event) => {
-  switch(event.name){
+  switch (event.name) {
     case 'name':
-      formData = {...formData, name: event.value};
+      formData = { ...formData, name: event.value };
       break;
     case 'email':
-      formData = {...formData, email: event.value};
+      formData = { ...formData, email: event.value };
       break;
     case 'message':
-      formData = {...formData, message: event.value};
+      formData = { ...formData, message: event.value };
       break;
     default:
       break;
   }
   localStorage.setItem('data', JSON.stringify(formData));
-}
+};
 const reloadBrowser = JSON.parse(localStorage.getItem('data'));
 if (reloadBrowser) {
   formName.value = reloadBrowser.name;

@@ -140,12 +140,12 @@
           I’d love to help with it
         </p>
         <div class="form-content">
-          <form action="https://formspree.io/f/xwkaygyj" method="POST" onsubmit="return checkForm(this)">
+          <form onsubmit="return checkForm(this)" action="https://formspree.io/f/xwkaygyj" method="POST">
             <div class="name">
-              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" />
-              <input id="email" type="email" name="email" required placeholder="example@gmail.com" />
+              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" oninput="onChangeHandler(this)"/>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com" oninput="onChangeHandler(this)"/>
               <textarea id="message" name="message" cols="30" rows="7" maxlength="500" placeholder="Write your message here"
-                required></textarea>
+                required oninput="onChangeHandler(this)"></textarea>
                 <span class="errorMessage" id="errorMessage"></span>
               <button type="submit">Get It Touch</button>
             </div>

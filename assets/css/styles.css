@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -1745,7 +1745,6 @@ form textarea {
   }
 }
 
-
 @media screen and (min-width: 992px) {
   body {
     max-width: 100%;
@@ -2750,6 +2749,14 @@ form textarea {
     line-height: 52px;
   }
 
+  .see-project {
+    margin-left: 60%;
+  }
+
+  .tech {
+    margin-left: 60%;
+  }
+
   .inner-popup-div img {
     display: flex;
     width: 80%;
@@ -2757,11 +2764,14 @@ form textarea {
   }
 
   .inner-popup-div p {
-    float: left;
     font-size: 16px;
     line-height: 30px;
+    width: 50%;
   }
-  
+
+  .popup-see-source-btn {
+    width: 50%;
+  }
 }
 
 .overlay {
@@ -2872,11 +2882,13 @@ form textarea {
   background-position: right 0 bottom 50%;
   background-size: 12%;
   cursor: pointer;
+  width: auto;
 }
 
 .popup-see-source-btn {
   display: flex;
   border: 1px solid #6070ff;
+  width: auto;
   box-sizing: border-box;
   cursor: pointer;
   border-radius: 8px;
@@ -2891,10 +2903,11 @@ form textarea {
   margin: 0 3vw;
 }
 
-span .close {
+.close {
   color: #aaa;
   float: right;
   font-size: 20px;
+  margin-left: 90%;
 }
 
 .close:hover,
@@ -2909,7 +2922,7 @@ span .close {
   overflow: auto;
   background: #c1c7d0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   left: 0;
@@ -2934,7 +2947,7 @@ span .close {
 
 .see-proj-btn {
   position: absolute;
-  margin-top: 55%;
+  margin-top: 65%;
   border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;

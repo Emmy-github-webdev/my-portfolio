@@ -1,5 +1,5 @@
 /* Form validation */
-const nameInput = document.getElementById('name');
+const formName = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 

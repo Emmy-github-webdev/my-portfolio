@@ -1,3 +1,25 @@
+/* Form validation */
+const email = document.getElementById('email');
+
+function checkForm(form) {
+  const error = document.getElementById('errorMessage');
+
+  if (email.value === email.value.toLowerCase()) {
+    return true;
+  }
+
+  email.style.border = '1px solid red';
+  email.style.boxShadow = '0 0 5pt 1pt #ffb3b3';
+
+  error.innerHTML = 'Email must be lowercase!';
+  error.style.display = 'block';
+  error.style.color = '#ff0000';
+
+  form.email.focus();
+  return false;
+}
+
+/* Overlay full screen mobile menu */
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
 }
@@ -193,3 +215,4 @@ function createProject() {
 }
 
 createProject();
+checkForm();

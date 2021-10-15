@@ -28,7 +28,7 @@ const workDiv = document.querySelector('.work');
 const projects = [
   {
     id: 1,
-    featuredImage: '/assets/images/mobile/portfolio1.png',
+    featuredImage: 'assets/images/mobile/portfolio1.png',
     name: 'Tonic',
     frame: [
       'CANOPY', 'Back End Dev', '2015',
@@ -44,7 +44,7 @@ const projects = [
 
   {
     id: 2,
-    featuredImage: '/assets/images/mobile/portfolio2.svg',
+    featuredImage: 'assets/images/mobile/portfolio2.svg',
     name: 'Multi-Post Stories',
     frame: [
       'CANOPY', 'Back End Dev', '2015',
@@ -60,7 +60,7 @@ const projects = [
 
   {
     id: 3,
-    featuredImage: '/assets/images/mobile/portfolio3.svg',
+    featuredImage: 'assets/images/mobile/portfolio3.svg',
     name: 'Tonic',
     frame: [
       'CANOPY', 'Back End Dev', '2015',
@@ -76,7 +76,7 @@ const projects = [
 
   {
     id: 4,
-    featuredImage: '/assets/images/mobile/portfolio4.svg',
+    featuredImage: 'assets/images/mobile/portfolio4.svg',
     name: 'Multi-Post Stories',
     frame: [
       'CANOPY', 'Back End Dev', '2015',

@@ -2718,10 +2718,6 @@ form textarea {
     line-height: 52px;
   }
 
-  .see-proj-btn {
-    margin-top: 80%;
-  }
-
   .contact-form p {
     width: 40%;
     text-align: center;
@@ -2884,11 +2880,13 @@ form textarea {
   background-repeat: no-repeat;
   background-position: right 0 bottom 50%;
   background-size: 12%;
+  cursor: pointer;
 }
 
 .popup-see-source-btn {
   border: 1px solid #6070ff;
   box-sizing: border-box;
+  cursor: pointer;
   border-radius: 8px;
   width: 152px;
   height: 40px;
@@ -2958,4 +2956,5 @@ form textarea {
   letter-spacing: 0.03em;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }

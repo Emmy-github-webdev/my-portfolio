@@ -2787,6 +2787,7 @@ form textarea {
   top: 0;
   background-color: #6070ff;
   background-color: #6070ffe6;
+  overflow-x: hidden;
   filter: blur(0.4px);
   transition: 0.5s;
 }

@@ -181,10 +181,11 @@ function createProject() {
       });
     });
 
-    cardTextDiv.appendChild(createProjectBtn);
-    cardTextDiv.appendChild(tagDiv);
-    cardTextDiv.appendChild(cardTextDivP);
+    
     cardTextDiv.appendChild(cardFrameDiv);
+    cardTextDiv.appendChild(cardTextDivP);
+    cardTextDiv.appendChild(tagDiv);
+    cardTextDiv.appendChild(createProjectBtn);
     cardTextDiv.appendChild(cardTextDivH3);
     cardDiv.appendChild(cardTextDiv);
     cardDiv.appendChild(cardImg);

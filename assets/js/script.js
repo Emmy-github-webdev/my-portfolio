@@ -180,7 +180,6 @@ function createProject() {
         popUpParentDiv.style.display = 'none';
       });
     });
-
     
     cardTextDiv.appendChild(cardFrameDiv);
     cardTextDiv.appendChild(cardTextDivP);

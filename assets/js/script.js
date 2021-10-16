@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* Form validation */
-const formName = document.getElementById('name');
+//const formName = document.getElementById('name');
 const email = document.getElementById('email');
-const message = document.getElementById('message');
+//const message = document.getElementById('message');
 
 function checkForm(form) {
   const error = document.getElementById('errorMessage');
@@ -23,30 +23,43 @@ function checkForm(form) {
 }
 
 /* localStorage */
-let formData = { name: '', email: '', message: '' };
+document.querySelector('form').addEventListener('submit',
+function(e) {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  localStorage.setItem('name', name);
+  localStorage.setItem('email', email);
+  localStorage.setItem('message', message);
 
-const onChangeHandler = (event) => {
-  switch (event.name) {
-    case 'name':
-      formData = { ...formData, name: event.value };
-      break;
-    case 'email':
-      formData = { ...formData, email: event.value };
-      break;
-    case 'message':
-      formData = { ...formData, message: event.value };
-      break;
-    default:
-      break;
-  }
-  localStorage.setItem('data', JSON.stringify(formData));
-};
-const reloadBrowser = JSON.parse(localStorage.getItem('data'));
-if (reloadBrowser) {
-  formName.value = reloadBrowser.name;
-  email.value = reloadBrowser.email;
-  message.value = reloadBrowser.message;
-}
+  e.preventDefault();
+});
+
+// let formData = { name: '', email: '', message: '' };
+
+// const onChangeHandler = (event) => {
+//   switch (event.name) {
+//     case 'name':
+//       formData = { ...formData, name: event.value };
+//       break;
+//     case 'email':
+//       formData = { ...formData, email: event.value };
+//       break;
+//     case 'message':
+//       formData = { ...formData, message: event.value };
+//       break;
+//     default:
+//       break;
+//   }
+//   localStorage.setItem('data', JSON.stringify(formData));
+// };
+// const reloadBrowser = JSON.parse(localStorage.getItem('data'));
+// formName.value = reloadBrowser.name;
+// if (reloadBrowser) {
+//   formName.value = reloadBrowser.name;
+//   email.value = reloadBrowser.email;
+//   message.value = reloadBrowser.message;
+// }
 
 /* Overlay full screen mobile menu */
 function openNav() {

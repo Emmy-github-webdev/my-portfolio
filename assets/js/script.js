@@ -2,6 +2,7 @@
 /* Form validation */
 const formName = document.getElementById('name');
 const email = document.getElementById('email');
+const form = document.getElementById('formId');
 
 function checkForm(form) {
   const error = document.getElementById('errorMessage');
@@ -23,25 +24,32 @@ function checkForm(form) {
 
 /* localStorage */
 
-let formData = { name: '', email: '' };
+const formData = [];
 
-const onChangeHandler = (event) => {
-  switch (event.name) {
-    case 'name':
-      formData = { ...formData, name: event.value };
-      break;
-    case 'email':
-      formData = { ...formData, email: event.value };
-      break;
-    default:
-      break;
-  }
+function UserData(name, email) {
+  this.name = name;
+  this.email = email;
+}
+
+function setLocalStorage() {
   localStorage.setItem('data', JSON.stringify(formData));
-};
-const userData = JSON.parse(localStorage.getItem('data'));
-if (userData) {
-  formName.value = userData.name;
-  email.value = userData.email;
+}
+
+function getFormDetail() {
+  const newUser = new UserData(formName.value, email.value);
+  formData.push(newUser);
+  setLocalStorage();
+}
+form.addEventListener('submit', getFormDetail);
+
+function getDataFromLocalStorage() {
+  const dataFromLocalStorage = JSON.parse(localStorage.getItem('data'));
+  if (dataFromLocalStorage) {
+    dataFromLocalStorage.forEach((data) => {
+      formName.value = data.name;
+      email.value = data.email;
+    });
+  }
 }
 
 /* Overlay full screen mobile menu */
@@ -237,6 +245,7 @@ function createProject() {
     cardDiv.appendChild(cardImg);
     workDiv.appendChild(cardDiv);
   });
+  getDataFromLocalStorage();
 }
 
 createProject();

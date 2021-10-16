@@ -140,10 +140,10 @@
           I’d love to help with it
         </p>
         <div class="form-content">
-          <form action="https://formspree.io/f/xwkaygyj" method="POST" onsubmit="return checkForm(this)">
-            <div class="name">
-              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" />
-              <input id="email" type="email" name="email" required placeholder="example@gmail.com" />
+          <form onsubmit="return checkForm(this)" action="https://formspree.io/f/xwkaygyj" method="POST" id="formId">
+            <div class="form-contact-name">
+              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name"/>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com"/>
               <textarea id="message" name="message" cols="30" rows="7" maxlength="500" placeholder="Write your message here"
                 required></textarea>
                 <span class="errorMessage" id="errorMessage"></span>
@@ -154,7 +154,35 @@
         </div>
       </div>
     </section>
+      <!-- The Modal -->
     <div id='modal-card' class="modal-card">
+      <!-- Modal content -->
+      <div class="modal-card-content">
+        <span class="close">&times;</span>
+        <h3>Tonic</h3>
+        <div class="card-frame">
+          <span>CANOPY</span>
+          <span>. Back End Dev</span>
+          <span>. 2015</span>
+        </div>
+        <img src="/assets/images/mobile/portfolio1.png" alt="image one">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+        </p>
+        <div class="tech">
+          <span>html</span>
+          <span>css</span>
+          <span>javascript</span>
+        </div>
+
+        <div class="see-project">
+          <button>See Live</button>
+          <Button>See source</Button>
+        </div>
+      </div>
+
     </div>
   </div>
   <script src="./assets/js/script.js"></script>

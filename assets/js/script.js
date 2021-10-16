@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* Form validation */
+const formName = document.getElementById('name');
 const email = document.getElementById('email');
+const form = document.getElementById('formId');
 
 function checkForm(form) {
   const error = document.getElementById('errorMessage');
@@ -17,6 +20,36 @@ function checkForm(form) {
 
   form.email.focus();
   return false;
+}
+
+/* localStorage */
+
+const formData = [];
+
+function UserData(name, email) {
+  this.name = name;
+  this.email = email;
+}
+
+function setLocalStorage() {
+  localStorage.setItem('data', JSON.stringify(formData));
+}
+
+function getFormDetail() {
+  const newUser = new UserData(formName.value, email.value);
+  formData.push(newUser);
+  setLocalStorage();
+}
+form.addEventListener('submit', getFormDetail);
+
+function getDataFromLocalStorage() {
+  const dataFromLocalStorage = JSON.parse(localStorage.getItem('data'));
+  if (dataFromLocalStorage) {
+    dataFromLocalStorage.forEach((data) => {
+      formName.value = data.name;
+      email.value = data.email;
+    });
+  }
 }
 
 /* Overlay full screen mobile menu */
@@ -212,7 +245,7 @@ function createProject() {
     cardDiv.appendChild(cardImg);
     workDiv.appendChild(cardDiv);
   });
+  getDataFromLocalStorage();
 }
 
 createProject();
-checkForm();

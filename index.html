@@ -141,9 +141,9 @@
         </p>
         <div class="form-content">
           <form onsubmit="return checkForm(this)" action="https://formspree.io/f/xwkaygyj" method="POST">
-            <div class="name">
-              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name"/>
-              <input id="email" type="email" name="email" required placeholder="example@gmail.com"/>
+            <div class="form-contact-name">
+              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" oninput="onChangeHandler(this)"/>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com" oninput="onChangeHandler(this)"/>
               <textarea id="message" name="message" cols="30" rows="7" maxlength="500" placeholder="Write your message here"
                 required></textarea>
                 <span class="errorMessage" id="errorMessage"></span>
@@ -177,7 +177,10 @@
           <span>javascript</span>
         </div>
 
-  
+        <div class="see-project">
+          <button>See Live</button>
+          <Button>See source</Button>
+        </div>
       </div>
 
     </div>
